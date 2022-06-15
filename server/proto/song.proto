@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/sentrionic/horizon/pb";
+
+message PlaylistSongResponse {
+  string id = 1;
+  string title = 2;
+  string url = 3;
+  uint32 duration = 4;
+  string date_added = 5;
+  bool is_liked = 6;
+  ArtistResponse artist = 7;
+}
+
+message SongResponse {
+  string id = 1;
+  string title = 2;
+  string url = 3;
+  uint32 duration = 4;
+  uint32 plays = 5;
+  bool is_liked = 6;
+  ArtistResponse artist = 7;
+}
+
+message ArtistResponse {
+  string id = 1;
+  string username = 2;
+  string image = 3;
+}

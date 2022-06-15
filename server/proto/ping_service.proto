@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/sentrionic/horizon/pb";
+
+message PingRequest {
+  string message = 1;
+}
+
+service HealthCheck {
+  rpc Ping(PingRequest) returns (PingRequest) {};
+}

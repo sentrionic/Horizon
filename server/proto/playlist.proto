@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/sentrionic/horizon/pb";
+
+message PlaylistResponse {
+  string id = 1;
+  string name = 2;
+  optional string description = 3;
+  string owner = 4;
+  uint32 duration = 5;
+  uint32 song_count = 6;
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d1c02e0c-300a-4e91-9311-c2544589ff9f",
+  "title": "Minimal Technology",
+  "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/5bf8086b-da53-45ab-adec-58ef00b4bfcb/Minimal%20Technology.mp3",
+  "duration": 119,
+  "plays": 10,
+  "is_liked": true,
+  "artist": {
+    "id": "5bf8086b-da53-45ab-adec-58ef00b4bfcb",
+    "username": "Coma-Media",
+    "image": "https://gravatar.com/avatar/cf3cbbfad08823de6a5e7da4ba060b7f?d=identicon"
+  }
+}

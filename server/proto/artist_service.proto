@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package pb;
+
+import "song.proto";
+
+option go_package = "github.com/sentrionic/horizon/pb";
+
+message ArtistRequest {
+  string id = 1;
+}
+
+message SearchArtistRequest {
+  uint32 page = 1;
+  uint32 limit = 2;
+  string query = 3;
+  optional string order = 4;
+}
+
+message ArtistListResponse {
+  repeated ArtistResponse artists = 1;
+}
+
+service Artist {
+  rpc GetArtist(ArtistRequest) returns (ArtistResponse) {};
+  rpc SearchArtists(SearchArtistRequest) returns (ArtistListResponse) {};
+}

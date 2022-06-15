@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package pb;
+
+import "account.proto";
+
+option go_package = "github.com/sentrionic/horizon/pb";
+
+message LoginRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message RegisterRequest {
+  string email = 1;
+  string username = 2;
+  string password = 3;
+}
+
+message AuthResponse {
+  string access_token = 1;
+  string refresh_token = 2;
+  AccountResponse account = 3;
+}
+
+message UpdateRequest {
+  string email = 1;
+  string username = 2;
+}
+
+message EmptyRequest {}
+
+service Auth {
+  rpc Register (RegisterRequest) returns (AuthResponse) {};
+  rpc Login (LoginRequest) returns (AuthResponse) {};
+  rpc Current (EmptyRequest) returns (AccountResponse) {};
+  rpc Update (UpdateRequest) returns (AccountResponse) {};
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "d1c02e0c-300a-4e91-9311-c2544589ff9f",
+    "title": "Minimal Technology",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/5bf8086b-da53-45ab-adec-58ef00b4bfcb/Minimal%20Technology.mp3",
+    "duration": 119,
+    "plays": 10,
+    "is_liked": true,
+    "artist": {
+      "id": "5bf8086b-da53-45ab-adec-58ef00b4bfcb",
+      "username": "Coma-Media",
+      "image": "https://gravatar.com/avatar/cf3cbbfad08823de6a5e7da4ba060b7f?d=identicon"
+    }
+  },
+  {
+    "id": "5c70e8ed-02b4-4092-b47c-649e9ba02234",
+    "title": "Sexy Fashion Beats",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/5bf8086b-da53-45ab-adec-58ef00b4bfcb/Sexy%20Fashion%20Beats.mp3",
+    "duration": 91,
+    "plays": 4,
+    "is_liked": false,
+    "artist": {
+      "id": "5bf8086b-da53-45ab-adec-58ef00b4bfcb",
+      "username": "Coma-Media",
+      "image": "https://gravatar.com/avatar/cf3cbbfad08823de6a5e7da4ba060b7f?d=identicon"
+    }
+  },
+  {
+    "id": "5d80338d-e7ef-499d-8ddc-6ac3662a8c56",
+    "title": "Forest Lullaby",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/1266029e-a238-4500-a8f4-71448b66f16e/Forest%20Lullaby.mp3",
+    "duration": 138,
+    "plays": 2,
+    "is_liked": true,
+    "artist": {
+      "id": "1266029e-a238-4500-a8f4-71448b66f16e",
+      "username": "Lesfm",
+      "image": "https://gravatar.com/avatar/77691bbf650ceb94fb39db1b0a062215?d=identicon"
+    }
+  },
+  {
+    "id": "47516238-c9e7-4651-8582-fff503b27b65",
+    "title": "Dubstep",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/040e55cb-c6b6-453e-b4f9-000ba29817cf/Dubstep.mp3",
+    "duration": 124,
+    "plays": 1,
+    "is_liked": true,
+    "artist": {
+      "id": "040e55cb-c6b6-453e-b4f9-000ba29817cf",
+      "username": "BenSounds",
+      "image": "https://gravatar.com/avatar/2c66f6142933ed5a97948f89cb1c7be0?d=identicon"
+    }
+  },
+  {
+    "id": "694da9ba-1919-49ae-b866-af9e7cf59ceb",
+    "title": "Dreams",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/040e55cb-c6b6-453e-b4f9-000ba29817cf/Dreams.mp3",
+    "duration": 210,
+    "plays": 0,
+    "is_liked": true,
+    "artist": {
+      "id": "040e55cb-c6b6-453e-b4f9-000ba29817cf",
+      "username": "BenSounds",
+      "image": "https://gravatar.com/avatar/2c66f6142933ed5a97948f89cb1c7be0?d=identicon"
+    }
+  },
+  {
+    "id": "6e9227ef-745a-4e26-9143-24d224e0ed07",
+    "title": "Farm",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/f377bf7c-f587-4a62-8e87-a5d52176f61e/Farm.mp3",
+    "duration": 292,
+    "plays": 0,
+    "is_liked": false,
+    "artist": {
+      "id": "f377bf7c-f587-4a62-8e87-a5d52176f61e",
+      "username": "Kevin MacLeod",
+      "image": "https://gravatar.com/avatar/74f4eb226f0901fdd2f89a783b79c2ad?d=identicon"
+    }
+  },
+  {
+    "id": "7af70b3f-b9d1-4a00-b590-45acc92b3653",
+    "title": "Beauty Flow",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/f377bf7c-f587-4a62-8e87-a5d52176f61e/Beauty%20Flow.mp3",
+    "duration": 433,
+    "plays": 0,
+    "is_liked": false,
+    "artist": {
+      "id": "f377bf7c-f587-4a62-8e87-a5d52176f61e",
+      "username": "Kevin MacLeod",
+      "image": "https://gravatar.com/avatar/74f4eb226f0901fdd2f89a783b79c2ad?d=identicon"
+    }
+  },
+  {
+    "id": "957479f4-3f3f-4fd2-872e-a0060023c61d",
+    "title": "Whip",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/530e2c12-cedb-4ec5-8d84-e9ed6a6ac472/Whip.mp3",
+    "duration": 164,
+    "plays": 0,
+    "is_liked": false,
+    "artist": {
+      "id": "530e2c12-cedb-4ec5-8d84-e9ed6a6ac472",
+      "username": "prazkhanal",
+      "image": "https://gravatar.com/avatar/7a200732e11ecb5b028f28a9bed0e2c2?d=identicon"
+    }
+  },
+  {
+    "id": "b757f706-1510-4736-ae49-8cd40eabdb1f",
+    "title": "Inspiring Motivational Mood",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/d7b3b167-5f0b-4acc-bb1b-a61896167780/Inspiring%20Motivational%20Mood.mp3",
+    "duration": 138,
+    "plays": 0,
+    "is_liked": false,
+    "artist": {
+      "id": "d7b3b167-5f0b-4acc-bb1b-a61896167780",
+      "username": "Alex MakeMusic",
+      "image": "https://gravatar.com/avatar/5daafcf7e4e8ebe8c5aa4beae203be49?d=identicon"
+    }
+  },
+  {
+    "id": "ba33e4dd-0d45-4666-91cc-56e85744cd67",
+    "title": "Ambient Piano Ambient Strings",
+    "url": "https://harmony-cdn.s3.eu-central-1.amazonaws.com/songs/297b4f6d-bad1-490e-81b5-4dd7a2c25335/Ambient%20Piano%20Ambient%20Strings.mp3",
+    "duration": 217,
+    "plays": 0,
+    "is_liked": false,
+    "artist": {
+      "id": "297b4f6d-bad1-490e-81b5-4dd7a2c25335",
+      "username": "ZakharValaha",
+      "image": "https://gravatar.com/avatar/6df1708d42e75b710bc03cd955e2cb7d?d=identicon"
+    }
+  }
+]

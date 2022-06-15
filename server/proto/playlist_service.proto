@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package pb;
+
+import "song.proto";
+import "playlist.proto";
+
+option go_package = "github.com/sentrionic/horizon/pb";
+
+message CreatePlaylistRequest {
+  string name = 1;
+  optional string description = 2;
+}
+
+message UpdatePlaylistRequest {
+  string playlist_id = 1;
+  string name = 2;
+  optional string description = 3;
+}
+
+message PlaylistListResponse {
+  repeated PlaylistResponse playlists = 1;
+}
+
+message GetPlaylistRequest {}
+
+message PlaylistRequest {
+  string id = 1;
+}
+
+message PlaylistSongRequest {
+  string playlist_id = 1;
+  string song_id = 2;
+}
+
+message PlaylistSongList {
+  repeated PlaylistSongResponse songs = 1;
+}
+
+service Playlist {
+  rpc GetPlaylists(GetPlaylistRequest) returns (PlaylistListResponse) {};
+  rpc AddSong(PlaylistSongRequest) returns (SongResponse) {};
+  rpc RemoveSong(PlaylistSongRequest) returns (SongResponse) {};
+  rpc CreatePlaylist(CreatePlaylistRequest) returns (PlaylistResponse) {};
+  rpc UpdatePlaylist(UpdatePlaylistRequest) returns (PlaylistResponse) {};
+  rpc DeletePlaylist(PlaylistRequest) returns (PlaylistResponse) {};
+  rpc GetPlaylistSongs(PlaylistRequest) returns (PlaylistSongList) {};
+}
