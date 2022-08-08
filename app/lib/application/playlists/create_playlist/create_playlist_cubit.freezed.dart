@@ -211,16 +211,15 @@ abstract class _CreatePlaylistState implements CreatePlaylistState {
           createFailureOrSuccessOption}) = _$_CreatePlaylistState;
 
   @override
-  PlaylistName get name => throw _privateConstructorUsedError;
+  PlaylistName get name;
   @override
-  PlaylistDescription get description => throw _privateConstructorUsedError;
+  PlaylistDescription get description;
   @override
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get showErrorMessages;
   @override
-  bool get isSubmitting => throw _privateConstructorUsedError;
+  bool get isSubmitting;
   @override
-  Option<Either<PlaylistFailure, Playlist>> get createFailureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<PlaylistFailure, Playlist>> get createFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
   _$$_CreatePlaylistStateCopyWith<_$_CreatePlaylistState> get copyWith =>

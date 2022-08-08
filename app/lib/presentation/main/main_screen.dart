@@ -6,7 +6,7 @@ import 'package:horizon/injection.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+  const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +18,7 @@ class MainScreen extends StatelessWidget {
 }
 
 class _LoadingIndicator extends StatelessWidget {
-  const _LoadingIndicator({
-    Key? key,
-  }) : super(key: key);
+  const _LoadingIndicator();
 
   @override
   Widget build(BuildContext context) {

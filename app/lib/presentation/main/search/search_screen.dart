@@ -17,7 +17,7 @@ import 'package:horizon/presentation/main/search/widgets/search_appbar.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
 class SearchScreen extends StatelessWidget {
-  const SearchScreen({Key? key}) : super(key: key);
+  const SearchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,12 +34,12 @@ class SearchScreen extends StatelessWidget {
 }
 
 class _SearchScreenBody extends HookWidget {
-  const _SearchScreenBody({Key? key}) : super(key: key);
+  const _SearchScreenBody();
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
-    final _textController = useTextEditingController();
+    final scrollController = useScrollController();
+    final textController = useTextEditingController();
     return BlocListener<ToggleLikeCubit, ToggleLikeState>(
       listener: (context, state) {
         state.maybeWhen(
@@ -50,7 +50,7 @@ class _SearchScreenBody extends HookWidget {
       },
       child: WindowWrapper(
         appBar: SearchAppbar(
-          controller: _textController,
+          controller: textController,
           onSearch: (value) {
             context.read<SongListCubit>().getSongs(
                   limit: 5,
@@ -60,7 +60,7 @@ class _SearchScreenBody extends HookWidget {
             context.read<SearchArtistsCubit>().getArtists(value, limit: 5);
           },
         ),
-        controller: _scrollController,
+        controller: scrollController,
         children: [
           const SizedBox(
             height: 20,
@@ -84,7 +84,7 @@ class _SearchScreenBody extends HookWidget {
                     category: "Songs",
                     onClick: () => context.router.push(
                       SongsPageRoute(
-                        query: _textController.text,
+                        query: textController.text,
                       ),
                     ),
                     showMore: songs.isNotEmpty,
@@ -117,7 +117,7 @@ class _SearchScreenBody extends HookWidget {
                     category: "Artists",
                     onClick: () => context.router.push(
                       ArtistsPageRoute(
-                        query: _textController.text,
+                        query: textController.text,
                       ),
                     ),
                     showMore: artists.isNotEmpty,

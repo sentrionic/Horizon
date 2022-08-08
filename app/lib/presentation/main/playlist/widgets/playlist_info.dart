@@ -7,12 +7,12 @@ class PlayListInfo extends StatelessWidget {
   final Widget child;
 
   const PlayListInfo({
-    Key? key,
+    super.key,
     required this.name,
     this.description,
     required this.info,
     required this.child,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

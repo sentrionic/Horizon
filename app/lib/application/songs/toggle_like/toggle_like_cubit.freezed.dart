@@ -466,7 +466,7 @@ class _$_ToggleFailure implements _ToggleFailure {
 abstract class _ToggleFailure implements ToggleLikeState {
   const factory _ToggleFailure(final SongFailure failure) = _$_ToggleFailure;
 
-  SongFailure get failure => throw _privateConstructorUsedError;
+  SongFailure get failure;
   @JsonKey(ignore: true)
   _$$_ToggleFailureCopyWith<_$_ToggleFailure> get copyWith =>
       throw _privateConstructorUsedError;
@@ -621,7 +621,7 @@ class _$_ToggleSuccess implements _ToggleSuccess {
 abstract class _ToggleSuccess implements ToggleLikeState {
   const factory _ToggleSuccess(final Song song) = _$_ToggleSuccess;
 
-  Song get song => throw _privateConstructorUsedError;
+  Song get song;
   @JsonKey(ignore: true)
   _$$_ToggleSuccessCopyWith<_$_ToggleSuccess> get copyWith =>
       throw _privateConstructorUsedError;

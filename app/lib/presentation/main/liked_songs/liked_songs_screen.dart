@@ -12,7 +12,7 @@ import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/main/liked_songs/widgets/liked_songs_header.dart';
 
 class LikedSongsScreen extends StatelessWidget {
-  const LikedSongsScreen({Key? key}) : super(key: key);
+  const LikedSongsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +26,11 @@ class LikedSongsScreen extends StatelessWidget {
 }
 
 class _LikedSongsScreenBody extends HookWidget {
-  const _LikedSongsScreenBody({
-    Key? key,
-  }) : super(key: key);
+  const _LikedSongsScreenBody();
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
+    final scrollController = useScrollController();
     return BlocListener<ToggleLikeCubit, ToggleLikeState>(
       listener: (context, state) {
         state.maybeWhen(
@@ -44,9 +42,9 @@ class _LikedSongsScreenBody extends HookWidget {
       child: WindowWrapper(
         appBar: NavigationAppbar(
           title: "Liked Songs",
-          controller: _scrollController,
+          controller: scrollController,
         ),
-        controller: _scrollController,
+        controller: scrollController,
         children: [
           BlocBuilder<LikedSongsCubit, LikedSongsState>(
             builder: (context, state) => state.maybeWhen(

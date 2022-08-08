@@ -464,7 +464,7 @@ class _$_AddFailure implements _AddFailure {
 abstract class _AddFailure implements AddSongState {
   const factory _AddFailure(final PlaylistFailure failure) = _$_AddFailure;
 
-  PlaylistFailure get failure => throw _privateConstructorUsedError;
+  PlaylistFailure get failure;
   @JsonKey(ignore: true)
   _$$_AddFailureCopyWith<_$_AddFailure> get copyWith =>
       throw _privateConstructorUsedError;
@@ -618,7 +618,7 @@ class _$_AddSuccess implements _AddSuccess {
 abstract class _AddSuccess implements AddSongState {
   const factory _AddSuccess(final Song song) = _$_AddSuccess;
 
-  Song get song => throw _privateConstructorUsedError;
+  Song get song;
   @JsonKey(ignore: true)
   _$$_AddSuccessCopyWith<_$_AddSuccess> get copyWith =>
       throw _privateConstructorUsedError;

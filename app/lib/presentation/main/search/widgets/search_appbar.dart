@@ -10,10 +10,10 @@ class SearchAppbar extends StatelessWidget with PreferredSizeWidget {
   final TextEditingController controller;
   final Function(String) onSearch;
   const SearchAppbar({
-    Key? key,
+    super.key,
     required this.controller,
     required this.onSearch,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

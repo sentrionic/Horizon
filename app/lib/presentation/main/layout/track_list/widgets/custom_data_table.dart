@@ -68,7 +68,7 @@ class CustomDataRow extends DataRow {
   });
 
   CustomDataRow.byIndex({
-    int? index,
+    super.index,
     super.selected = false,
     super.onSelectChanged,
     super.color,
@@ -79,7 +79,7 @@ class CustomDataRow extends DataRow {
     super.onLongPress,
     this.onSecondaryTap,
     this.onSecondaryTapDown,
-  }) : super.byIndex(index: index);
+  }) : super.byIndex();
 
   /// Specific row height, which will be used only if provided.
   /// If not provided, dataRowHeight will be applied.
@@ -658,12 +658,14 @@ class CustomDataTable extends DataTable {
           ],
         );
 
-        final w = Container(
-          decoration: decoration ?? theme.dataTableTheme.decoration,
-          child: t,
-        );
+        if (decoration != null) {
+          return DecoratedBox(
+            decoration: decoration!,
+            child: t,
+          );
+        }
 
-        return w;
+        return t;
       },
     );
 

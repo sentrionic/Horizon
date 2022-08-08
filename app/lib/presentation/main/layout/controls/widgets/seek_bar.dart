@@ -11,15 +11,15 @@ class SeekBar extends HookWidget {
   final ValueChanged<Duration> onChangeEnd;
 
   const SeekBar({
-    Key? key,
+    super.key,
     required this.duration,
     required this.position,
     required this.onChangeEnd,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
-    final _dragValue = useState<double?>(null);
+    final dragValue = useState<double?>(null);
     return SliderTheme(
       data: const SliderThemeData().copyWith(
         trackHeight: 3,
@@ -52,15 +52,15 @@ class SeekBar extends HookWidget {
               child: Slider(
                 max: duration.inMilliseconds.toDouble(),
                 value: min(
-                  _dragValue.value ?? position.inMilliseconds.toDouble(),
+                  dragValue.value ?? position.inMilliseconds.toDouble(),
                   duration.inMilliseconds.toDouble(),
                 ),
                 onChanged: (value) {
-                  _dragValue.value = value;
+                  dragValue.value = value;
                 },
                 onChangeEnd: (value) {
                   onChangeEnd(Duration(milliseconds: value.round()));
-                  _dragValue.value = null;
+                  dragValue.value = null;
                 },
               ),
             ),

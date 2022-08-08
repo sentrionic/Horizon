@@ -18,7 +18,7 @@ import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +32,11 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _HomePage extends HookWidget {
-  const _HomePage({
-    Key? key,
-  }) : super(key: key);
+  const _HomePage();
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
+    final scrollController = useScrollController();
     context.read<SongListCubit>().getSongs(
           limit: 5,
           order: SongOrder.plays,
@@ -56,9 +54,9 @@ class _HomePage extends HookWidget {
       child: WindowWrapper(
         appBar: NavigationAppbar(
           title: "Home",
-          controller: _scrollController,
+          controller: scrollController,
         ),
-        controller: _scrollController,
+        controller: scrollController,
         children: [
           Text(
             getTimeOfDay(),

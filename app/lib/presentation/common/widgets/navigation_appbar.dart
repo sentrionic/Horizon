@@ -8,17 +8,17 @@ class NavigationAppbar extends HookWidget with PreferredSizeWidget {
   final String title;
   final ScrollController controller;
   const NavigationAppbar({
-    Key? key,
+    super.key,
     required this.title,
     required this.controller,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     final showBar = useState(false);
     final animation =
         useAnimationController(duration: const Duration(milliseconds: 500));
-    final _colorTween =
+    final colorTween =
         ColorTween(begin: Colors.transparent, end: ThemeColors.accountButton)
             .animate(animation);
 
@@ -37,7 +37,7 @@ class NavigationAppbar extends HookWidget with PreferredSizeWidget {
       builder: (context, child) {
         return AppBar(
           automaticallyImplyLeading: false,
-          backgroundColor: _colorTween.value,
+          backgroundColor: colorTween.value,
           elevation: 0,
           leadingWidth: 100.0,
           leading: Padding(

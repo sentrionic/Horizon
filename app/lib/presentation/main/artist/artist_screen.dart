@@ -15,7 +15,7 @@ import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 
 class ArtistScreen extends StatelessWidget {
   final String id;
-  const ArtistScreen({Key? key, required this.id}) : super(key: key);
+  const ArtistScreen({super.key, required this.id});
 
   @override
   Widget build(BuildContext context) {
@@ -32,11 +32,11 @@ class ArtistScreen extends StatelessWidget {
 
 class _ArtistsPage extends HookWidget {
   final String id;
-  const _ArtistsPage({Key? key, required this.id}) : super(key: key);
+  const _ArtistsPage({required this.id});
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
+    final scrollController = useScrollController();
     context.read<SongListCubit>().getSongs(
           artistId: id,
           order: SongOrder.plays,
@@ -55,9 +55,9 @@ class _ArtistsPage extends HookWidget {
           orElse: () => WindowWrapper(
             appBar: NavigationAppbar(
               title: "Artist",
-              controller: _scrollController,
+              controller: scrollController,
             ),
-            controller: _scrollController,
+            controller: scrollController,
             children: const [
               SizedBox(),
             ],
@@ -65,9 +65,9 @@ class _ArtistsPage extends HookWidget {
           loadSuccess: (artist) => WindowWrapper(
             appBar: NavigationAppbar(
               title: artist.username,
-              controller: _scrollController,
+              controller: scrollController,
             ),
-            controller: _scrollController,
+            controller: scrollController,
             children: [
               ArtistHeader(
                 artist: artist,

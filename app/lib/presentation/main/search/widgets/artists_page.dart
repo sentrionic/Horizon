@@ -10,7 +10,7 @@ import 'package:horizon/presentation/main/search/widgets/search_appbar.dart';
 
 class ArtistsPage extends StatelessWidget {
   final String query;
-  const ArtistsPage({Key? key, required this.query}) : super(key: key);
+  const ArtistsPage({super.key, required this.query});
 
   @override
   Widget build(BuildContext context) {
@@ -27,21 +27,21 @@ class ArtistsPage extends StatelessWidget {
 
 class _ArtistsPage extends HookWidget {
   final String query;
-  const _ArtistsPage({Key? key, required this.query}) : super(key: key);
+  const _ArtistsPage({required this.query});
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
-    final _textController = useTextEditingController(text: query);
+    final scrollController = useScrollController();
+    final textController = useTextEditingController(text: query);
     context.read<SearchArtistsCubit>().getArtists(query);
 
     return WindowWrapper(
       appBar: SearchAppbar(
-        controller: _textController,
+        controller: textController,
         onSearch: (value) =>
             context.read<SearchArtistsCubit>().getArtists(value),
       ),
-      controller: _scrollController,
+      controller: scrollController,
       children: [
         const SizedBox(
           height: 20,

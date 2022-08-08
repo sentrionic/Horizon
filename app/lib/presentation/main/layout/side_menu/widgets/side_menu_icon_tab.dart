@@ -9,12 +9,12 @@ class SideMenuIconTab extends StatelessWidget {
   final bool isActive;
 
   const SideMenuIconTab({
-    Key? key,
+    super.key,
     required this.iconData,
     required this.title,
     required this.onTap,
     required this.isActive,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -47,8 +47,8 @@ class SideMenuIconTab extends StatelessWidget {
 
 class FavoriteSongsTab extends StatelessWidget {
   const FavoriteSongsTab({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

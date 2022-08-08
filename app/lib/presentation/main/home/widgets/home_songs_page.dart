@@ -19,7 +19,7 @@ enum SongQuery {
 
 class HomeSongsPage extends StatelessWidget {
   final SongQuery query;
-  const HomeSongsPage({Key? key, required this.query}) : super(key: key);
+  const HomeSongsPage({super.key, required this.query});
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +33,11 @@ class HomeSongsPage extends StatelessWidget {
 
 class _SongPage extends HookWidget {
   final SongQuery query;
-  const _SongPage({Key? key, required this.query}) : super(key: key);
+  const _SongPage({required this.query});
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
+    final scrollController = useScrollController();
     context.read<SongListCubit>().getSongs(order: _getOrder(query));
     return BlocListener<ToggleLikeCubit, ToggleLikeState>(
       listener: (context, state) {
@@ -50,9 +50,9 @@ class _SongPage extends HookWidget {
       child: WindowWrapper(
         appBar: NavigationAppbar(
           title: _getLabel(query),
-          controller: _scrollController,
+          controller: scrollController,
         ),
-        controller: _scrollController,
+        controller: scrollController,
         children: [
           BlocBuilder<SongListCubit, SongListState>(
             builder: (context, state) => state.maybeWhen(

@@ -7,11 +7,11 @@ class AuthWrapper extends StatelessWidget {
   final double? width;
   final double? height;
   const AuthWrapper({
-    Key? key,
+    super.key,
     required this.child,
     this.width,
     this.height,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

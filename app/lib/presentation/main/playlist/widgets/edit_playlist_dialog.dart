@@ -7,9 +7,9 @@ import 'package:horizon/presentation/core/app_colors.dart';
 class EditPlaylistDialog extends StatelessWidget {
   final String id;
   const EditPlaylistDialog({
-    Key? key,
+    super.key,
     required this.id,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

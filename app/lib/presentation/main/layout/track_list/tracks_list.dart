@@ -18,18 +18,18 @@ class TracksList extends HookWidget {
   final String? playlistID;
 
   const TracksList({
-    Key? key,
+    super.key,
     required this.songs,
     required this.currentID,
     this.isDateAdded = true,
     this.showHeader = true,
     this.playlistID,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     final player = context.read<AudioPlayerCubit>().state.player;
-    final _tapPosition = useState<Offset>(Offset.zero);
+    final tapPosition = useState<Offset>(Offset.zero);
     return StreamBuilder<SequenceState?>(
       stream: player.sequenceStateStream,
       builder: (context, snapshot) {
@@ -60,12 +60,12 @@ class TracksList extends HookWidget {
               return CustomDataRow(
                 onSecondaryTap: () => showTrackContextMenu(
                   context,
-                  _tapPosition.value,
+                  tapPosition.value,
                   e,
                   playlistID,
                 ),
                 onSecondaryTapDown: (value) =>
-                    _tapPosition.value = value.globalPosition,
+                    tapPosition.value = value.globalPosition,
                 color: MaterialStateProperty.resolveWith<Color?>(
                     (Set<MaterialState> states) {
                   if (states.contains(MaterialState.hovered)) {

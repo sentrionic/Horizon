@@ -9,37 +9,37 @@ environment:
 
 dependencies:
   another_flushbar: ^1.10.29
-  auto_route: ^4.0.1
+  auto_route: ^4.2.1
   collection: ^1.16.0
   dartz: ^0.10.1
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
-  flutter_hooks: ^0.18.4
-  flutter_secure_storage: ^5.0.2
-  freezed_annotation: ^2.0.3
+  flutter_hooks: ^0.18.5+1
+  flutter_secure_storage: ^5.1.0
+  freezed_annotation: ^2.1.0
   get_it: ^7.2.0
   grpc: ^3.0.2
-  hive: ^2.2.2
+  hive: ^2.2.3
   hydrated_bloc: ^8.1.0
   injectable: ^1.5.3
   intl: ^0.17.0
-  just_audio: ^0.9.24
-  just_audio_libwinmedia: ^0.0.4
+  just_audio: ^0.9.28
+  just_audio_libwinmedia: ^0.0.4+1
   path_provider: ^2.0.11
   protobuf: ^2.1.0
-  rxdart: ^0.27.4
+  rxdart: ^0.27.5
   window_manager: ^0.2.5
 
 dev_dependencies:
-  auto_route_generator: ^4.0.0
+  auto_route_generator: ^4.2.1
   bloc_test: ^9.0.3
   build_runner: null
   flutter_test:
     sdk: flutter
-  freezed: ^2.0.3+1
-  injectable_generator: ^1.5.3
-  lint: ^1.8.2
+  freezed: ^2.1.0+1
+  injectable_generator: ^1.5.4
+  lint: ^1.10.0
   mocktail: ^0.3.0
 
 flutter:

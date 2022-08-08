@@ -6,7 +6,7 @@ import 'package:horizon/presentation/routes/router.gr.dart';
 
 class ArtistTile extends StatelessWidget {
   final Artist artist;
-  const ArtistTile({Key? key, required this.artist}) : super(key: key);
+  const ArtistTile({super.key, required this.artist});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class ArtistTile extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
+              DecoratedBox(
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   boxShadow: [

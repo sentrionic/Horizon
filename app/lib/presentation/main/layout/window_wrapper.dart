@@ -8,11 +8,11 @@ class WindowWrapper extends StatelessWidget {
   final List<Widget> children;
 
   const WindowWrapper({
-    Key? key,
+    super.key,
     required this.appBar,
     required this.controller,
     required this.children,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

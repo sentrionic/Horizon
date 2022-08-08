@@ -221,17 +221,17 @@ abstract class _Playlist extends Playlist {
   const _Playlist._() : super._();
 
   @override
-  String get id => throw _privateConstructorUsedError;
+  String get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String? get description => throw _privateConstructorUsedError;
+  String? get description;
   @override
-  String get owner => throw _privateConstructorUsedError;
+  String get owner;
   @override
-  int get duration => throw _privateConstructorUsedError;
+  int get duration;
   @override
-  int get songCount => throw _privateConstructorUsedError;
+  int get songCount;
   @override
   @JsonKey(ignore: true)
   _$$_PlaylistCopyWith<_$_Playlist> get copyWith =>

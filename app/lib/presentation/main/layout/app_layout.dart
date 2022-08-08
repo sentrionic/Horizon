@@ -17,7 +17,7 @@ import 'package:horizon/presentation/routes/router.gr.dart';
 
 class AppLayout extends StatelessWidget {
   final Widget child;
-  const AppLayout({Key? key, required this.child}) : super(key: key);
+  const AppLayout({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {

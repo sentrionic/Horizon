@@ -6,11 +6,11 @@ class CategoryHeader extends StatelessWidget {
   final bool showMore;
 
   const CategoryHeader({
-    Key? key,
+    super.key,
     required this.category,
     this.onClick,
     this.showMore = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

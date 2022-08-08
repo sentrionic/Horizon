@@ -13,7 +13,7 @@ import 'package:horizon/presentation/main/layout/side_menu/widgets/side_menu_ico
 import 'package:horizon/presentation/routes/router.gr.dart';
 
 class SideMenu extends StatelessWidget {
-  const SideMenu({Key? key}) : super(key: key);
+  const SideMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +29,7 @@ class SideMenu extends StatelessWidget {
 }
 
 class _SideMenuContent extends StatelessWidget {
-  const _SideMenuContent({
-    Key? key,
-  }) : super(key: key);
+  const _SideMenuContent();
 
   @override
   Widget build(BuildContext context) {

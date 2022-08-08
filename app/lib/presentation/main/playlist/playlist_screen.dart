@@ -16,9 +16,9 @@ import 'package:horizon/presentation/main/playlist/widgets/playlist_header.dart'
 class PlaylistScreen extends StatelessWidget {
   final String id;
   const PlaylistScreen({
-    Key? key,
+    super.key,
     @PathParam("id") required this.id,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -35,14 +35,11 @@ class PlaylistScreen extends StatelessWidget {
 
 class _PlaylistScreenBody extends HookWidget {
   final String id;
-  const _PlaylistScreenBody({
-    Key? key,
-    required this.id,
-  }) : super(key: key);
+  const _PlaylistScreenBody({required this.id});
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
+    final scrollController = useScrollController();
     return MultiBlocListener(
       listeners: [
         BlocListener<ToggleLikeCubit, ToggleLikeState>(
@@ -69,9 +66,9 @@ class _PlaylistScreenBody extends HookWidget {
         appBar: NavigationAppbar(
           title: context.read<PlaylistListCubit>().getPlaylist(id)?.name ??
               "Playlist",
-          controller: _scrollController,
+          controller: scrollController,
         ),
-        controller: _scrollController,
+        controller: scrollController,
         children: [
           PlaylistHeader(
             id: id,

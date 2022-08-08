@@ -8,12 +8,12 @@ class UpdateAccountFormField extends StatelessWidget {
   final String? Function() validator;
 
   const UpdateAccountFormField({
-    Key? key,
+    super.key,
     required this.label,
     required this.initialValue,
     required this.onChanged,
     required this.validator,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

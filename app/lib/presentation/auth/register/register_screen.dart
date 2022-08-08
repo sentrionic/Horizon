@@ -8,7 +8,7 @@ import 'package:horizon/presentation/auth/register/register_form.dart';
 class RegisterScreen extends StatelessWidget {
   static const routeName = '/register';
 
-  const RegisterScreen({Key? key}) : super(key: key);
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ import 'package:horizon/presentation/common/widgets/widget_sizes.dart';
 import 'package:window_manager/window_manager.dart';
 
 class TitleBar extends StatefulWidget {
-  const TitleBar({Key? key}) : super(key: key);
+  const TitleBar({super.key});
 
   @override
   State<TitleBar> createState() => _TitleBarState();
@@ -42,8 +42,8 @@ class _TitleBarState extends State<TitleBar> with WindowListener {
               width: sideMenuWidth,
               color: Colors.black,
             ),
-            Expanded(
-              child: Container(
+            const Expanded(
+              child: ColoredBox(
                 color: Colors.black,
               ),
             ),

@@ -210,16 +210,15 @@ abstract class _EditPlaylistState implements EditPlaylistState {
           editFailureOrSuccessOption}) = _$_EditPlaylistState;
 
   @override
-  PlaylistName get name => throw _privateConstructorUsedError;
+  PlaylistName get name;
   @override
-  PlaylistDescription get description => throw _privateConstructorUsedError;
+  PlaylistDescription get description;
   @override
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get showErrorMessages;
   @override
-  bool get isSubmitting => throw _privateConstructorUsedError;
+  bool get isSubmitting;
   @override
-  Option<Either<PlaylistFailure, Playlist>> get editFailureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<PlaylistFailure, Playlist>> get editFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
   _$$_EditPlaylistStateCopyWith<_$_EditPlaylistState> get copyWith =>

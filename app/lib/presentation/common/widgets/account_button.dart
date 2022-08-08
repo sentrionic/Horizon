@@ -8,7 +8,7 @@ import 'package:horizon/presentation/core/app_colors.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
 class AccountButton extends StatelessWidget {
-  const AccountButton({Key? key}) : super(key: key);
+  const AccountButton({super.key});
 
   @override
   Widget build(BuildContext context) {

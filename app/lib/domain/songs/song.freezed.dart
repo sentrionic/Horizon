@@ -267,21 +267,21 @@ abstract class _Song extends Song {
   const _Song._() : super._();
 
   @override
-  String get id => throw _privateConstructorUsedError;
+  String get id;
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
-  int? get plays => throw _privateConstructorUsedError;
+  int? get plays;
   @override
-  int get duration => throw _privateConstructorUsedError;
+  int get duration;
   @override
-  String? get dateAdded => throw _privateConstructorUsedError;
+  String? get dateAdded;
   @override
-  bool get isLiked => throw _privateConstructorUsedError;
+  bool get isLiked;
   @override
-  Artist get artist => throw _privateConstructorUsedError;
+  Artist get artist;
   @override
   @JsonKey(ignore: true)
   _$$_SongCopyWith<_$_Song> get copyWith => throw _privateConstructorUsedError;

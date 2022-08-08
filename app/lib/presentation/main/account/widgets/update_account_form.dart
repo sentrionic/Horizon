@@ -10,11 +10,11 @@ import 'package:horizon/presentation/main/account/widgets/update_account_field.d
 import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 
 class UpdateAccountForm extends HookWidget {
-  const UpdateAccountForm({Key? key}) : super(key: key);
+  const UpdateAccountForm({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
+    final scrollController = useScrollController();
     final account = context.read<AccountCubit>().state;
 
     useEffect(
@@ -56,9 +56,9 @@ class UpdateAccountForm extends HookWidget {
           child: WindowWrapper(
             appBar: NavigationAppbar(
               title: "Account",
-              controller: _scrollController,
+              controller: scrollController,
             ),
-            controller: _scrollController,
+            controller: scrollController,
             children: [
               BackgroundContainer(
                 children: [

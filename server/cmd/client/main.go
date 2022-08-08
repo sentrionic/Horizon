@@ -5,8 +5,8 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 
 	"github.com/joho/godotenv"
 	"github.com/sentrionic/horizon/client"
@@ -69,7 +69,7 @@ func main() {
 }
 
 func loadTLSCredentials() (credentials.TransportCredentials, error) {
-	pemServerCA, err := ioutil.ReadFile("cert/ca-cert.pem")
+	pemServerCA, err := os.ReadFile("cert/ca-cert.pem")
 
 	if err != nil {
 		return nil, err

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 /// Indeterminate linear loading indicator with top spacing.
 class LinearLoadingIndicator extends StatelessWidget {
   const LinearLoadingIndicator({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class BackgroundContainer extends StatelessWidget {
   final List<Widget> children;
-  const BackgroundContainer({Key? key, required this.children})
-      : super(key: key);
+  const BackgroundContainer({super.key, required this.children});
 
   @override
   Widget build(BuildContext context) {

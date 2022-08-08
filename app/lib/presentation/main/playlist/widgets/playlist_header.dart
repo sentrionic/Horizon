@@ -11,9 +11,9 @@ import 'package:just_audio/just_audio.dart';
 class PlaylistHeader extends HookWidget {
   final String id;
   const PlaylistHeader({
-    Key? key,
+    super.key,
     required this.id,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -33,10 +33,7 @@ class PlaylistHeader extends HookWidget {
 
 class _PlaylistButtons extends StatelessWidget {
   final String id;
-  const _PlaylistButtons({
-    Key? key,
-    required this.id,
-  }) : super(key: key);
+  const _PlaylistButtons({required this.id});
 
   @override
   Widget build(BuildContext context) {

@@ -7,8 +7,7 @@ class PasswordFormField extends HookWidget {
   final Function(String) onChanged;
   final String? Function() validator;
 
-  const PasswordFormField(this.hint, this.onChanged, this.validator, {Key? key})
-      : super(key: key);
+  const PasswordFormField(this.hint, this.onChanged, this.validator, {super.key});
 
   @override
   Widget build(BuildContext context) {

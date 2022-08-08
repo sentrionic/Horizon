@@ -7,7 +7,7 @@ import 'package:just_audio/just_audio.dart';
 import 'package:window_manager/window_manager.dart';
 
 class MoreControls extends StatelessWidget {
-  const MoreControls({Key? key}) : super(key: key);
+  const MoreControls({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,10 +40,7 @@ class MoreControls extends StatelessWidget {
 
 class _VolumeSlider extends StatelessWidget {
   final AudioPlayer player;
-  const _VolumeSlider({
-    Key? key,
-    required this.player,
-  }) : super(key: key);
+  const _VolumeSlider({required this.player});
 
   @override
   Widget build(BuildContext context) {

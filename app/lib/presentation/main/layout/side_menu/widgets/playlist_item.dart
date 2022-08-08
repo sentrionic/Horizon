@@ -11,12 +11,12 @@ class PlaylistItem extends StatelessWidget {
   final Function(TapDownDetails) onSecondaryTapDown;
 
   const PlaylistItem({
-    Key? key,
+    super.key,
     required this.playlist,
     required this.isActive,
     required this.onSecondaryTap,
     required this.onSecondaryTapDown,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

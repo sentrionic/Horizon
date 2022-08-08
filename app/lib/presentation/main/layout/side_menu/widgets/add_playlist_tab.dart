@@ -6,7 +6,7 @@ import 'package:horizon/presentation/core/app_colors.dart';
 
 class AddPlaylistTab extends StatelessWidget {
   final CreatePlaylistCubit cubit;
-  const AddPlaylistTab({Key? key, required this.cubit}) : super(key: key);
+  const AddPlaylistTab({super.key, required this.cubit});
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +42,8 @@ class AddPlaylistTab extends StatelessWidget {
 
 class CreatePlaylistDialog extends StatelessWidget {
   const CreatePlaylistDialog({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

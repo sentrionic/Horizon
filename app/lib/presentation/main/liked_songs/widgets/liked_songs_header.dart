@@ -11,9 +11,9 @@ import 'package:just_audio/just_audio.dart';
 class LikedSongsHeader extends StatelessWidget {
   final int songCount;
   const LikedSongsHeader({
-    Key? key,
+    super.key,
     required this.songCount,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +28,7 @@ class LikedSongsHeader extends StatelessWidget {
 }
 
 class _LikedSongsButtons extends StatelessWidget {
-  const _LikedSongsButtons({
-    Key? key,
-  }) : super(key: key);
+  const _LikedSongsButtons();
 
   @override
   Widget build(BuildContext context) {

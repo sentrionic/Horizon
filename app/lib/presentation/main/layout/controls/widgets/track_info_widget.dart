@@ -7,7 +7,7 @@ import 'package:horizon/injection.dart';
 import 'package:just_audio/just_audio.dart';
 
 class TrackInfo extends StatelessWidget {
-  const TrackInfo({Key? key}) : super(key: key);
+  const TrackInfo({super.key});
 
   @override
   Widget build(BuildContext context) {

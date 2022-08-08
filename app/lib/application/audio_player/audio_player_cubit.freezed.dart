@@ -186,13 +186,13 @@ abstract class _AudioPlayerState implements AudioPlayerState {
       required final bool shuffleEnabled}) = _$_AudioPlayerState;
 
   @override
-  AudioPlayer get player => throw _privateConstructorUsedError;
+  AudioPlayer get player;
   @override
-  String? get currentlyPlayingID => throw _privateConstructorUsedError;
+  String? get currentlyPlayingID;
   @override
-  double get volume => throw _privateConstructorUsedError;
+  double get volume;
   @override
-  bool get shuffleEnabled => throw _privateConstructorUsedError;
+  bool get shuffleEnabled;
   @override
   @JsonKey(ignore: true)
   _$$_AudioPlayerStateCopyWith<_$_AudioPlayerState> get copyWith =>

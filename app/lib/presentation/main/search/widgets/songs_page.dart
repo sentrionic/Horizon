@@ -11,7 +11,7 @@ import 'package:horizon/presentation/main/search/widgets/search_appbar.dart';
 
 class SongsPage extends StatelessWidget {
   final String query;
-  const SongsPage({Key? key, required this.query}) : super(key: key);
+  const SongsPage({super.key, required this.query});
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +25,12 @@ class SongsPage extends StatelessWidget {
 
 class _SongsPage extends HookWidget {
   final String query;
-  const _SongsPage({Key? key, required this.query}) : super(key: key);
+  const _SongsPage({required this.query});
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
-    final _textController = useTextEditingController(text: query);
+    final scrollController = useScrollController();
+    final textController = useTextEditingController(text: query);
     context.read<SongListCubit>().getSongs(query: query);
 
     return BlocListener<ToggleLikeCubit, ToggleLikeState>(
@@ -43,11 +43,11 @@ class _SongsPage extends HookWidget {
       },
       child: WindowWrapper(
         appBar: SearchAppbar(
-          controller: _textController,
+          controller: textController,
           onSearch: (value) =>
               context.read<SongListCubit>().getSongs(query: value),
         ),
-        controller: _scrollController,
+        controller: scrollController,
         children: [
           BlocBuilder<SongListCubit, SongListState>(
             builder: (context, state) => state.maybeWhen(

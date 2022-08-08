@@ -152,11 +152,11 @@ abstract class _Artist extends Artist {
   const _Artist._() : super._();
 
   @override
-  String get id => throw _privateConstructorUsedError;
+  String get id;
   @override
-  String get username => throw _privateConstructorUsedError;
+  String get username;
   @override
-  String get image => throw _privateConstructorUsedError;
+  String get image;
   @override
   @JsonKey(ignore: true)
   _$$_ArtistCopyWith<_$_Artist> get copyWith =>

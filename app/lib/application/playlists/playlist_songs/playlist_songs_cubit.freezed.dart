@@ -462,7 +462,7 @@ class _$_LoadSuccess implements _LoadSuccess {
 abstract class _LoadSuccess implements PlaylistSongsState {
   const factory _LoadSuccess(final List<Song> songs) = _$_LoadSuccess;
 
-  List<Song> get songs => throw _privateConstructorUsedError;
+  List<Song> get songs;
   @JsonKey(ignore: true)
   _$$_LoadSuccessCopyWith<_$_LoadSuccess> get copyWith =>
       throw _privateConstructorUsedError;
@@ -617,7 +617,7 @@ class _$_LoadFailure implements _LoadFailure {
 abstract class _LoadFailure implements PlaylistSongsState {
   const factory _LoadFailure(final PlaylistFailure failure) = _$_LoadFailure;
 
-  PlaylistFailure get failure => throw _privateConstructorUsedError;
+  PlaylistFailure get failure;
   @JsonKey(ignore: true)
   _$$_LoadFailureCopyWith<_$_LoadFailure> get copyWith =>
       throw _privateConstructorUsedError;

@@ -19,15 +19,15 @@ class LibraryPlaylists extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _scrollController = useScrollController();
-    final _tapPosition = useState<Offset>(Offset.zero);
+    final scrollController = useScrollController();
+    final tapPosition = useState<Offset>(Offset.zero);
     final id = AutoRouter.of(context).current.pathParams.get("id") as String?;
     return Expanded(
       child: Scrollbar(
         thumbVisibility: true,
-        controller: _scrollController,
+        controller: scrollController,
         child: ListView(
-          controller: _scrollController,
+          controller: scrollController,
           padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 10),
           physics: const ClampingScrollPhysics(),
           children: [
@@ -48,10 +48,10 @@ class LibraryPlaylists extends HookWidget {
                                 AutoRouter.of(context).current.name ==
                                     PlaylistScreenRoute.name,
                             onSecondaryTapDown: (value) =>
-                                _tapPosition.value = value.globalPosition,
+                                tapPosition.value = value.globalPosition,
                             onSecondaryTap: () => _showCustomMenu(
                               context,
-                              _tapPosition.value,
+                              tapPosition.value,
                               playlist,
                             ),
                           );

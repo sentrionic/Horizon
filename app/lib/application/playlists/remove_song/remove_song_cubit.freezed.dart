@@ -467,7 +467,7 @@ abstract class _RemoveFailure implements RemoveSongState {
   const factory _RemoveFailure(final PlaylistFailure failure) =
       _$_RemoveFailure;
 
-  PlaylistFailure get failure => throw _privateConstructorUsedError;
+  PlaylistFailure get failure;
   @JsonKey(ignore: true)
   _$$_RemoveFailureCopyWith<_$_RemoveFailure> get copyWith =>
       throw _privateConstructorUsedError;
@@ -622,7 +622,7 @@ class _$_RemoveSuccess implements _RemoveSuccess {
 abstract class _RemoveSuccess implements RemoveSongState {
   const factory _RemoveSuccess(final Song song) = _$_RemoveSuccess;
 
-  Song get song => throw _privateConstructorUsedError;
+  Song get song;
   @JsonKey(ignore: true)
   _$$_RemoveSuccessCopyWith<_$_RemoveSuccess> get copyWith =>
       throw _privateConstructorUsedError;

@@ -7,7 +7,7 @@ import 'package:just_audio/just_audio.dart';
 
 class ArtistHeader extends StatelessWidget {
   final Artist artist;
-  const ArtistHeader({Key? key, required this.artist}) : super(key: key);
+  const ArtistHeader({super.key, required this.artist});
 
   @override
   Widget build(BuildContext context) {

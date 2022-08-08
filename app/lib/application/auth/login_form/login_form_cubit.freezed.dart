@@ -209,16 +209,15 @@ abstract class _LoginFormState implements LoginFormState {
           authFailureOrSuccessOption}) = _$_LoginFormState;
 
   @override
-  EmailAddress get emailAddress => throw _privateConstructorUsedError;
+  EmailAddress get emailAddress;
   @override
-  Password get password => throw _privateConstructorUsedError;
+  Password get password;
   @override
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get showErrorMessages;
   @override
-  bool get isSubmitting => throw _privateConstructorUsedError;
+  bool get isSubmitting;
   @override
-  Option<Either<AuthFailure, Account>> get authFailureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<AuthFailure, Account>> get authFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
   _$$_LoginFormStateCopyWith<_$_LoginFormState> get copyWith =>

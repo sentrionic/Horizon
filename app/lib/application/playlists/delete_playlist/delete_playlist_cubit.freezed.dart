@@ -468,7 +468,7 @@ abstract class _DeleteFailure implements DeletePlaylistState {
   const factory _DeleteFailure(final PlaylistFailure failure) =
       _$_DeleteFailure;
 
-  PlaylistFailure get failure => throw _privateConstructorUsedError;
+  PlaylistFailure get failure;
   @JsonKey(ignore: true)
   _$$_DeleteFailureCopyWith<_$_DeleteFailure> get copyWith =>
       throw _privateConstructorUsedError;
@@ -623,7 +623,7 @@ class _$_DeleteSuccess implements _DeleteSuccess {
 abstract class _DeleteSuccess implements DeletePlaylistState {
   const factory _DeleteSuccess(final Playlist playlist) = _$_DeleteSuccess;
 
-  Playlist get playlist => throw _privateConstructorUsedError;
+  Playlist get playlist;
   @JsonKey(ignore: true)
   _$$_DeleteSuccessCopyWith<_$_DeleteSuccess> get copyWith =>
       throw _privateConstructorUsedError;

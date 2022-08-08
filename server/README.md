@@ -16,9 +16,10 @@ The server written using Go.
 
 1. Install Docker and get the Postgresql container (`make postgres`)
 2. Start the Postgresql container and create a DB (`make createdb`)
-3. Install Go (1.18) and get all the dependencies (`go mod tidy`)
+3. Install Go (1.19) and get all the dependencies (`go mod tidy`)
 4. Rename `.env.example` to `.env` and fill in the values
-5. Run `go run github.com/sentrionic/horizon/cmd/server` to run the server
+5. Generate Certs (see below)
+6. Run `go run github.com/sentrionic/horizon/cmd/server` to run the server
 
 # Development
 

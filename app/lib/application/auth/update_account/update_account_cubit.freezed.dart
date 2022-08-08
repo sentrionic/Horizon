@@ -209,16 +209,15 @@ abstract class _UpdateAccountState implements UpdateAccountState {
           saveFailureOrSuccessOption}) = _$_UpdateAccountState;
 
   @override
-  Username get username => throw _privateConstructorUsedError;
+  Username get username;
   @override
-  EmailAddress get emailAddress => throw _privateConstructorUsedError;
+  EmailAddress get emailAddress;
   @override
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get showErrorMessages;
   @override
-  bool get isSaving => throw _privateConstructorUsedError;
+  bool get isSaving;
   @override
-  Option<Either<AuthFailure, Account>> get saveFailureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<AuthFailure, Account>> get saveFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
   _$$_UpdateAccountStateCopyWith<_$_UpdateAccountState> get copyWith =>

@@ -10,9 +10,9 @@ import 'package:horizon/presentation/common/utils/flushbar_creator.dart';
 class PlaylistActionsListener extends StatelessWidget {
   final Widget child;
   const PlaylistActionsListener({
-    Key? key,
+    super.key,
     required this.child,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

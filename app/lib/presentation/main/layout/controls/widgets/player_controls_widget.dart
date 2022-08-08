@@ -6,9 +6,9 @@ import 'package:rxdart/rxdart.dart';
 class PlayerControls extends StatelessWidget {
   final AudioPlayer player;
   const PlayerControls({
-    Key? key,
+    super.key,
     required this.player,
-  }) : super(key: key);
+  });
 
   Stream<PositionData> get _positionDataStream =>
       Rx.combineLatest2<Duration, Duration?, PositionData>(
@@ -119,10 +119,9 @@ class _PlayButton extends StatelessWidget {
   final AudioPlayer player;
 
   const _PlayButton({
-    Key? key,
     required this.playerState,
     required this.player,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -156,10 +155,9 @@ class _LoopButton extends StatelessWidget {
   final LoopMode mode;
   final AudioPlayer player;
   const _LoopButton({
-    Key? key,
     required this.mode,
     required this.player,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
