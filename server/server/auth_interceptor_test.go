@@ -11,6 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/status"
 	"log"
 	"net"
@@ -144,7 +145,7 @@ func newTestClient(t *testing.T, serverAddress, accessToken, authorizationType s
 		setupMetadata,
 	)
 
-	conn, err := grpc.Dial(serverAddress, grpc.WithInsecure(), grpc.WithUnaryInterceptor(ai.Unary()))
+	conn, err := grpc.Dial(serverAddress, grpc.WithTransportCredentials(insecure.NewCredentials()), grpc.WithUnaryInterceptor(ai.Unary()))
 	require.NoError(t, err)
 	return pb.NewHealthCheckClient(conn)
 }
