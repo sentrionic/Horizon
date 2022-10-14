@@ -108,7 +108,7 @@ class LoginForm extends StatelessWidget {
                     Expanded(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
+                          backgroundColor: Colors.white,
                           shape: const StadiumBorder(),
                         ),
                         onPressed: () {

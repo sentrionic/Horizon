@@ -41,7 +41,7 @@ class StartUpScreen extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Theme.of(context).colorScheme.secondary,
+                      backgroundColor: Theme.of(context).colorScheme.secondary,
                       shape: const StadiumBorder(),
                     ),
                     onPressed: () => AutoRouter.of(context)

@@ -3,21 +3,19 @@ name: Test & Lint
 on:
   push:
     paths:
-      - 'server/**'
+      - "server/**"
   pull_request:
     paths:
-      - 'server/**'
+      - "server/**"
 
 jobs:
   golangci:
     name: lint
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go
-        uses: actions/setup-go@v3
+      - uses: actions/setup-go@v3
         with:
-          go-version: 1.18
-        id: go
+          go-version: 1.19
       - uses: actions/checkout@v3
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
@@ -49,7 +47,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
-          go-version: 1.18
+          go-version: 1.19
         id: go
 
       - name: Check out code into the Go module directory

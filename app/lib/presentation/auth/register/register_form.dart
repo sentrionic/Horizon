@@ -130,7 +130,8 @@ class RegisterForm extends StatelessWidget {
                     Expanded(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary: Theme.of(context).colorScheme.secondary,
+                          backgroundColor:
+                              Theme.of(context).colorScheme.secondary,
                           shape: const StadiumBorder(),
                         ),
                         onPressed: () {

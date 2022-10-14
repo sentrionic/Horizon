@@ -186,7 +186,7 @@ class CreatePlaylistDialog extends StatelessWidget {
                 vertical: 15,
               ),
               shape: const StadiumBorder(),
-              primary: Colors.white,
+              backgroundColor: Colors.white,
             ),
             child: const Text(
               "SAVE",

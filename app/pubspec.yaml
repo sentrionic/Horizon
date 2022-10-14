@@ -1,11 +1,11 @@
 name: horizon
 description: A new Flutter project.
 
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   another_flushbar: ^1.10.29
@@ -14,9 +14,9 @@ dependencies:
   dartz: ^0.10.1
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.0.1
+  flutter_bloc: ^8.1.1
   flutter_hooks: ^0.18.5+1
-  flutter_secure_storage: ^5.1.0
+  flutter_secure_storage: ^6.0.0
   freezed_annotation: ^2.1.0
   get_it: ^7.2.0
   grpc: ^3.0.2
@@ -24,16 +24,16 @@ dependencies:
   hydrated_bloc: ^8.1.0
   injectable: ^1.5.3
   intl: ^0.17.0
-  just_audio: ^0.9.28
+  just_audio: ^0.9.29
   just_audio_libwinmedia: ^0.0.4+1
   path_provider: ^2.0.11
   protobuf: ^2.1.0
   rxdart: ^0.27.5
-  window_manager: ^0.2.5
+  window_manager: ^0.2.7
 
 dev_dependencies:
   auto_route_generator: ^4.2.1
-  bloc_test: ^9.0.3
+  bloc_test: ^9.1.0
   build_runner: null
   flutter_test:
     sdk: flutter

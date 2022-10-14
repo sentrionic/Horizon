@@ -54,7 +54,7 @@ class DeletePlaylistDialog extends StatelessWidget {
               elevation: 0,
               padding: const EdgeInsets.all(20),
               shape: const StadiumBorder(),
-              primary: Theme.of(context).colorScheme.secondary,
+              backgroundColor: Theme.of(context).colorScheme.secondary,
             ),
             child: const Text(
               "DELETE",

@@ -18,7 +18,7 @@ void main() {
 
   setUp(() => repository = MockSongRepository());
 
-  void _setUpGetSongsSuccess(List<Song> songs) {
+  void setUpGetSongsSuccess(List<Song> songs) {
     when(() => repository.getLikedSongs()).thenAnswer(
       (_) => Future.delayed(
         const Duration(milliseconds: 1),
@@ -40,7 +40,7 @@ void main() {
 
     blocTest<LikedSongsCubit, LikedSongsState>(
       'emits [loadInProgress, loadSuccess] states for successful song list fetch',
-      setUp: () => _setUpGetSongsSuccess(songs),
+      setUp: () => setUpGetSongsSuccess(songs),
       build: () => mockHydratedStorage(() => LikedSongsCubit(repository)),
       act: (cubit) => cubit.getLikedSongs(),
       expect: () => [
@@ -90,7 +90,7 @@ void main() {
       mockHydratedStorage(() async {
         // arrange
         final cubit = LikedSongsCubit(repository);
-        _setUpGetSongsSuccess([...songs, mockSong]);
+        setUpGetSongsSuccess([...songs, mockSong]);
         await cubit.getLikedSongs();
 
         // act
@@ -136,7 +136,7 @@ void main() {
       mockHydratedStorage(() async {
         // arrange
         final cubit = LikedSongsCubit(repository);
-        _setUpGetSongsSuccess(songs);
+        setUpGetSongsSuccess(songs);
         await cubit.getLikedSongs();
 
         // act
