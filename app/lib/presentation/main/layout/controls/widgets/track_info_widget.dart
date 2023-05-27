@@ -41,7 +41,7 @@ class TrackInfo extends StatelessWidget {
                         song.title,
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodyLarge
                             ?.copyWith(color: Colors.white),
                       ),
                       const SizedBox(height: 4.0),
@@ -49,7 +49,7 @@ class TrackInfo extends StatelessWidget {
                         song.artist.username,
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(color: Colors.grey[300], fontSize: 11.0),
                       )
                     ],

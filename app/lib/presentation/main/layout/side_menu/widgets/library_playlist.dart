@@ -46,7 +46,7 @@ class LibraryPlaylists extends HookWidget {
                             playlist: playlist,
                             isActive: playlist.id == id &&
                                 AutoRouter.of(context).current.name ==
-                                    PlaylistScreenRoute.name,
+                                    PlaylistRoute.name,
                             onSecondaryTapDown: (value) =>
                                 tapPosition.value = value.globalPosition,
                             onSecondaryTap: () => _showCustomMenu(
@@ -74,7 +74,7 @@ class LibraryPlaylists extends HookWidget {
     Offset offset,
     Playlist playlist,
   ) {
-    final overlay = Overlay.of(context)!.context.findRenderObject()!;
+    final overlay = Overlay.of(context).context.findRenderObject()!;
 
     showMenu(
       color: ThemeColors.dialogColor,

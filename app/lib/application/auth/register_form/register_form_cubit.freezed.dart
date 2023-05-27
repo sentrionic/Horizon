@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'register_form_cubit.dart';
 
@@ -33,7 +33,8 @@ mixin _$RegisterFormState {
 abstract class $RegisterFormStateCopyWith<$Res> {
   factory $RegisterFormStateCopyWith(
           RegisterFormState value, $Res Function(RegisterFormState) then) =
-      _$RegisterFormStateCopyWithImpl<$Res>;
+      _$RegisterFormStateCopyWithImpl<$Res, RegisterFormState>;
+  @useResult
   $Res call(
       {EmailAddress emailAddress,
       Username username,
@@ -44,49 +45,51 @@ abstract class $RegisterFormStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RegisterFormStateCopyWithImpl<$Res>
+class _$RegisterFormStateCopyWithImpl<$Res, $Val extends RegisterFormState>
     implements $RegisterFormStateCopyWith<$Res> {
   _$RegisterFormStateCopyWithImpl(this._value, this._then);
 
-  final RegisterFormState _value;
   // ignore: unused_field
-  final $Res Function(RegisterFormState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? emailAddress = freezed,
-    Object? username = freezed,
-    Object? password = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? authFailureOrSuccessOption = freezed,
+    Object? emailAddress = null,
+    Object? username = null,
+    Object? password = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? authFailureOrSuccessOption = null,
   }) {
     return _then(_value.copyWith(
-      emailAddress: emailAddress == freezed
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as Username,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
+      authFailureOrSuccessOption: null == authFailureOrSuccessOption
           ? _value.authFailureOrSuccessOption
           : authFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Account>>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -97,6 +100,7 @@ abstract class _$$_RegisterFormStateCopyWith<$Res>
           $Res Function(_$_RegisterFormState) then) =
       __$$_RegisterFormStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {EmailAddress emailAddress,
       Username username,
@@ -108,46 +112,44 @@ abstract class _$$_RegisterFormStateCopyWith<$Res>
 
 /// @nodoc
 class __$$_RegisterFormStateCopyWithImpl<$Res>
-    extends _$RegisterFormStateCopyWithImpl<$Res>
+    extends _$RegisterFormStateCopyWithImpl<$Res, _$_RegisterFormState>
     implements _$$_RegisterFormStateCopyWith<$Res> {
   __$$_RegisterFormStateCopyWithImpl(
       _$_RegisterFormState _value, $Res Function(_$_RegisterFormState) _then)
-      : super(_value, (v) => _then(v as _$_RegisterFormState));
+      : super(_value, _then);
 
-  @override
-  _$_RegisterFormState get _value => super._value as _$_RegisterFormState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? emailAddress = freezed,
-    Object? username = freezed,
-    Object? password = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? authFailureOrSuccessOption = freezed,
+    Object? emailAddress = null,
+    Object? username = null,
+    Object? password = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? authFailureOrSuccessOption = null,
   }) {
     return _then(_$_RegisterFormState(
-      emailAddress: emailAddress == freezed
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as Username,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
+      authFailureOrSuccessOption: null == authFailureOrSuccessOption
           ? _value.authFailureOrSuccessOption
           : authFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Account>>,
@@ -189,30 +191,29 @@ class _$_RegisterFormState implements _RegisterFormState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_RegisterFormState &&
-            const DeepCollectionEquality()
-                .equals(other.emailAddress, emailAddress) &&
-            const DeepCollectionEquality().equals(other.username, username) &&
-            const DeepCollectionEquality().equals(other.password, password) &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality().equals(
-                other.authFailureOrSuccessOption, authFailureOrSuccessOption));
+            (identical(other.emailAddress, emailAddress) ||
+                other.emailAddress == emailAddress) &&
+            (identical(other.username, username) ||
+                other.username == username) &&
+            (identical(other.password, password) ||
+                other.password == password) &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                other.isSubmitting == isSubmitting) &&
+            (identical(other.authFailureOrSuccessOption,
+                    authFailureOrSuccessOption) ||
+                other.authFailureOrSuccessOption ==
+                    authFailureOrSuccessOption));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(emailAddress),
-      const DeepCollectionEquality().hash(username),
-      const DeepCollectionEquality().hash(password),
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(authFailureOrSuccessOption));
+  int get hashCode => Object.hash(runtimeType, emailAddress, username, password,
+      showErrorMessages, isSubmitting, authFailureOrSuccessOption);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_RegisterFormStateCopyWith<_$_RegisterFormState> get copyWith =>
       __$$_RegisterFormStateCopyWithImpl<_$_RegisterFormState>(
           this, _$identity);

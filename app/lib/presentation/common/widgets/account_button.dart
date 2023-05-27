@@ -25,11 +25,11 @@ class AccountButton extends StatelessWidget {
                   width: 120,
                   child: Text("Account"),
                 ),
-                onTap: () => context.pushRoute(const AccountScreenRoute()),
+                onTap: () => context.pushRoute(const AccountRoute()),
               ),
               PopupMenuItem(
                 child: const Text("Profile"),
-                onTap: () => context.pushRoute(ArtistScreenRoute(id: state.id)),
+                onTap: () => context.pushRoute(ArtistRoute(id: state.id)),
               ),
               const PopupMenuDivider(),
               PopupMenuItem(

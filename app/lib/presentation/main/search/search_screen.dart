@@ -16,6 +16,7 @@ import 'package:horizon/presentation/main/search/widgets/artist_tile.dart';
 import 'package:horizon/presentation/main/search/widgets/search_appbar.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
+@RoutePage()
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
 
@@ -67,7 +68,7 @@ class _SearchScreenBody extends HookWidget {
           ),
           Text(
             "Top Results",
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),
@@ -83,7 +84,7 @@ class _SearchScreenBody extends HookWidget {
                   CategoryHeader(
                     category: "Songs",
                     onClick: () => context.router.push(
-                      SongsPageRoute(
+                      SongsRoute(
                         query: textController.text,
                       ),
                     ),
@@ -116,7 +117,7 @@ class _SearchScreenBody extends HookWidget {
                   CategoryHeader(
                     category: "Artists",
                     onClick: () => context.router.push(
-                      ArtistsPageRoute(
+                      ArtistsRoute(
                         query: textController.text,
                       ),
                     ),

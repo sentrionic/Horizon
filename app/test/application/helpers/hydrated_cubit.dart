@@ -6,10 +6,8 @@ class MockStorage extends Mock implements Storage {}
 
 /// Initializes the hydrated_bloc in a mocked storage.
 T mockHydratedStorage<T>(T Function() body, {Storage? storage}) {
-  return HydratedBlocOverrides.runZoned<T>(
-    body,
-    storage: storage ?? _buildMockStorage(),
-  );
+  HydratedBloc.storage = storage ?? _buildMockStorage();
+  return body();
 }
 
 Storage _buildMockStorage() {

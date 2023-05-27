@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -17,6 +18,7 @@ enum SongQuery {
   popular,
 }
 
+@RoutePage()
 class HomeSongsPage extends StatelessWidget {
   final SongQuery query;
   const HomeSongsPage({super.key, required this.query});

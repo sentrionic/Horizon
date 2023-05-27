@@ -36,7 +36,7 @@ class PlayListInfo extends StatelessWidget {
                 children: [
                   Text(
                     'PLAYLIST',
-                    style: Theme.of(context).textTheme.overline!.copyWith(
+                    style: Theme.of(context).textTheme.labelSmall!.copyWith(
                           fontSize: 11.0,
                           fontWeight: FontWeight.bold,
                         ),
@@ -46,14 +46,14 @@ class PlayListInfo extends StatelessWidget {
                     name,
                     style: Theme.of(context)
                         .textTheme
-                        .headline2
+                        .displayMedium
                         ?.copyWith(fontSize: 48),
                   ),
                   const SizedBox(height: 16.0),
                   if (description != null)
                     Text(
                       description!,
-                      style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
                             color: Colors.white70,
                             fontSize: 13,
                             fontWeight: FontWeight.w500,
@@ -62,7 +62,7 @@ class PlayListInfo extends StatelessWidget {
                   const SizedBox(height: 16.0),
                   Text(
                     info,
-                    style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: Colors.white70,
                           fontSize: 13,
                           fontWeight: FontWeight.w500,

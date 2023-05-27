@@ -17,14 +17,14 @@ void showTrackContextMenu(
   Song song,
   String? playlistID,
 ) {
-  final overlay = Overlay.of(context)!.context.findRenderObject()!;
+  final overlay = Overlay.of(context).context.findRenderObject()!;
   showMenu(
     color: ThemeColors.dialogColor,
     context: context,
     items: <PopupMenuEntry>[
       PopupMenuItem(
         onTap: () => context.router.push(
-          ArtistScreenRoute(id: song.artist.id),
+          ArtistRoute(id: song.artist.id),
         ),
         child: const Text(
           "Go to artist",

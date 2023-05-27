@@ -24,7 +24,7 @@ class CategoryHeader extends StatelessWidget {
             Text.rich(
               TextSpan(
                 text: category,
-                style: Theme.of(context).textTheme.headline2?.copyWith(
+                style: Theme.of(context).textTheme.displayMedium?.copyWith(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                     ),
@@ -35,7 +35,7 @@ class CategoryHeader extends StatelessWidget {
               Text.rich(
                 TextSpan(
                   text: "SEE ALL",
-                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium?.copyWith(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
                         color: Colors.grey,

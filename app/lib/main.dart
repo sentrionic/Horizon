@@ -30,12 +30,9 @@ Future<void> main() async {
   }
 
   // Init the cache
-  final storage = await HydratedStorage.build(
+  HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: await getApplicationDocumentsDirectory(),
   );
 
-  HydratedBlocOverrides.runZoned(
-    () => runApp(AppWidget()),
-    storage: storage,
-  );
+  runApp(AppWidget());
 }

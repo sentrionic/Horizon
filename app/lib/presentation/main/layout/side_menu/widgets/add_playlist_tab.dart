@@ -25,7 +25,7 @@ class AddPlaylistTab extends StatelessWidget {
         ),
         title: Text(
           "Create Playlist",
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
           overflow: TextOverflow.ellipsis,
         ),
         onTap: () => showDialog(

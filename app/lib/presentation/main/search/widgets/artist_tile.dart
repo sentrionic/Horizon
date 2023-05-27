@@ -12,7 +12,7 @@ class ArtistTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => context.router.push(
-        ArtistScreenRoute(id: artist.id),
+        ArtistRoute(id: artist.id),
       ),
       child: Card(
         color: ThemeColors.artistCard,

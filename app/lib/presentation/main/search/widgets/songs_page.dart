@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -9,6 +10,7 @@ import 'package:horizon/presentation/main/layout/track_list/tracks_list.dart';
 import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/main/search/widgets/search_appbar.dart';
 
+@RoutePage()
 class SongsPage extends StatelessWidget {
   final String query;
   const SongsPage({super.key, required this.query});

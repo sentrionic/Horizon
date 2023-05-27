@@ -35,7 +35,7 @@ class AppLayout extends StatelessWidget {
         listener: (context, state) {
           state.maybeMap(
             unauthenticated: (_) =>
-                AutoRouter.of(context).replace(const StartUpScreenRoute()),
+                AutoRouter.of(context).replace(const StartUpRoute()),
             orElse: () {},
           );
         },

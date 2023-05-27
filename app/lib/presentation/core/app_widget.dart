@@ -4,7 +4,7 @@ import 'package:horizon/application/audio_player/audio_player_cubit.dart';
 import 'package:horizon/application/auth/auth_status/auth_status_bloc.dart';
 import 'package:horizon/injection.dart';
 import 'package:horizon/presentation/core/app_theme.dart';
-import 'package:horizon/presentation/routes/router.gr.dart';
+import 'package:horizon/presentation/routes/router.dart';
 
 class AppWidget extends StatelessWidget {
   final _appRouter = AppRouter();
@@ -20,8 +20,7 @@ class AppWidget extends StatelessWidget {
       ],
       child: MaterialApp.router(
         title: 'Horizon',
-        routerDelegate: _appRouter.delegate(),
-        routeInformationParser: _appRouter.defaultRouteParser(),
+        routerConfig: _appRouter.config(),
         debugShowCheckedModeBanner: false,
         theme: theme,
       ),

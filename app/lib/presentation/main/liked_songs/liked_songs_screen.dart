@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -11,6 +12,7 @@ import 'package:horizon/presentation/main/layout/track_list/tracks_list.dart';
 import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/main/liked_songs/widgets/liked_songs_header.dart';
 
+@RoutePage()
 class LikedSongsScreen extends StatelessWidget {
   const LikedSongsScreen({super.key});
 

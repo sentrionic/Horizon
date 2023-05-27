@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -8,6 +9,7 @@ import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/main/search/widgets/artist_tile.dart';
 import 'package:horizon/presentation/main/search/widgets/search_appbar.dart';
 
+@RoutePage()
 class ArtistsPage extends StatelessWidget {
   final String query;
   const ArtistsPage({super.key, required this.query});
@@ -48,7 +50,7 @@ class _ArtistsPage extends HookWidget {
         ),
         Text(
           'All artists for "$query"',
-          style: Theme.of(context).textTheme.headline2?.copyWith(
+          style: Theme.of(context).textTheme.displayMedium?.copyWith(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
               ),

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'add_song_cubit.dart';
 
@@ -26,10 +26,10 @@ mixin _$AddSongState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(PlaylistFailure failure)? addFailure,
-    TResult Function(Song song)? addSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(PlaylistFailure failure)? addFailure,
+    TResult? Function(Song song)? addSuccess,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$AddSongState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_AddFailure value)? addFailure,
-    TResult Function(_AddSuccess value)? addSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_AddFailure value)? addFailure,
+    TResult? Function(_AddSuccess value)? addSuccess,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,16 +72,18 @@ mixin _$AddSongState {
 abstract class $AddSongStateCopyWith<$Res> {
   factory $AddSongStateCopyWith(
           AddSongState value, $Res Function(AddSongState) then) =
-      _$AddSongStateCopyWithImpl<$Res>;
+      _$AddSongStateCopyWithImpl<$Res, AddSongState>;
 }
 
 /// @nodoc
-class _$AddSongStateCopyWithImpl<$Res> implements $AddSongStateCopyWith<$Res> {
+class _$AddSongStateCopyWithImpl<$Res, $Val extends AddSongState>
+    implements $AddSongStateCopyWith<$Res> {
   _$AddSongStateCopyWithImpl(this._value, this._then);
 
-  final AddSongState _value;
   // ignore: unused_field
-  final $Res Function(AddSongState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
@@ -92,13 +94,11 @@ abstract class _$$_InitialCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res> extends _$AddSongStateCopyWithImpl<$Res>
+class __$$_InitialCopyWithImpl<$Res>
+    extends _$AddSongStateCopyWithImpl<$Res, _$_Initial>
     implements _$$_InitialCopyWith<$Res> {
   __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
-      : super(_value, (v) => _then(v as _$_Initial));
-
-  @override
-  _$_Initial get _value => super._value as _$_Initial;
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -134,10 +134,10 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(PlaylistFailure failure)? addFailure,
-    TResult Function(Song song)? addSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(PlaylistFailure failure)? addFailure,
+    TResult? Function(Song song)? addSuccess,
   }) {
     return initial?.call();
   }
@@ -171,10 +171,10 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_AddFailure value)? addFailure,
-    TResult Function(_AddSuccess value)? addSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_AddFailure value)? addFailure,
+    TResult? Function(_AddSuccess value)? addSuccess,
   }) {
     return initial?.call(this);
   }
@@ -208,14 +208,11 @@ abstract class _$$_ActionInProgressCopyWith<$Res> {
 
 /// @nodoc
 class __$$_ActionInProgressCopyWithImpl<$Res>
-    extends _$AddSongStateCopyWithImpl<$Res>
+    extends _$AddSongStateCopyWithImpl<$Res, _$_ActionInProgress>
     implements _$$_ActionInProgressCopyWith<$Res> {
   __$$_ActionInProgressCopyWithImpl(
       _$_ActionInProgress _value, $Res Function(_$_ActionInProgress) _then)
-      : super(_value, (v) => _then(v as _$_ActionInProgress));
-
-  @override
-  _$_ActionInProgress get _value => super._value as _$_ActionInProgress;
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -251,10 +248,10 @@ class _$_ActionInProgress implements _ActionInProgress {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(PlaylistFailure failure)? addFailure,
-    TResult Function(Song song)? addSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(PlaylistFailure failure)? addFailure,
+    TResult? Function(Song song)? addSuccess,
   }) {
     return actionInProgress?.call();
   }
@@ -288,10 +285,10 @@ class _$_ActionInProgress implements _ActionInProgress {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_AddFailure value)? addFailure,
-    TResult Function(_AddSuccess value)? addSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_AddFailure value)? addFailure,
+    TResult? Function(_AddSuccess value)? addSuccess,
   }) {
     return actionInProgress?.call(this);
   }
@@ -321,27 +318,27 @@ abstract class _$$_AddFailureCopyWith<$Res> {
   factory _$$_AddFailureCopyWith(
           _$_AddFailure value, $Res Function(_$_AddFailure) then) =
       __$$_AddFailureCopyWithImpl<$Res>;
+  @useResult
   $Res call({PlaylistFailure failure});
 
   $PlaylistFailureCopyWith<$Res> get failure;
 }
 
 /// @nodoc
-class __$$_AddFailureCopyWithImpl<$Res> extends _$AddSongStateCopyWithImpl<$Res>
+class __$$_AddFailureCopyWithImpl<$Res>
+    extends _$AddSongStateCopyWithImpl<$Res, _$_AddFailure>
     implements _$$_AddFailureCopyWith<$Res> {
   __$$_AddFailureCopyWithImpl(
       _$_AddFailure _value, $Res Function(_$_AddFailure) _then)
-      : super(_value, (v) => _then(v as _$_AddFailure));
+      : super(_value, _then);
 
-  @override
-  _$_AddFailure get _value => super._value as _$_AddFailure;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? failure = freezed,
+    Object? failure = null,
   }) {
     return _then(_$_AddFailure(
-      failure == freezed
+      null == failure
           ? _value.failure
           : failure // ignore: cast_nullable_to_non_nullable
               as PlaylistFailure,
@@ -349,6 +346,7 @@ class __$$_AddFailureCopyWithImpl<$Res> extends _$AddSongStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PlaylistFailureCopyWith<$Res> get failure {
     return $PlaylistFailureCopyWith<$Res>(_value.failure, (value) {
       return _then(_value.copyWith(failure: value));
@@ -374,15 +372,15 @@ class _$_AddFailure implements _AddFailure {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AddFailure &&
-            const DeepCollectionEquality().equals(other.failure, failure));
+            (identical(other.failure, failure) || other.failure == failure));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(failure));
+  int get hashCode => Object.hash(runtimeType, failure);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AddFailureCopyWith<_$_AddFailure> get copyWith =>
       __$$_AddFailureCopyWithImpl<_$_AddFailure>(this, _$identity);
 
@@ -400,10 +398,10 @@ class _$_AddFailure implements _AddFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(PlaylistFailure failure)? addFailure,
-    TResult Function(Song song)? addSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(PlaylistFailure failure)? addFailure,
+    TResult? Function(Song song)? addSuccess,
   }) {
     return addFailure?.call(failure);
   }
@@ -437,10 +435,10 @@ class _$_AddFailure implements _AddFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_AddFailure value)? addFailure,
-    TResult Function(_AddSuccess value)? addSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_AddFailure value)? addFailure,
+    TResult? Function(_AddSuccess value)? addSuccess,
   }) {
     return addFailure?.call(this);
   }
@@ -475,27 +473,27 @@ abstract class _$$_AddSuccessCopyWith<$Res> {
   factory _$$_AddSuccessCopyWith(
           _$_AddSuccess value, $Res Function(_$_AddSuccess) then) =
       __$$_AddSuccessCopyWithImpl<$Res>;
+  @useResult
   $Res call({Song song});
 
   $SongCopyWith<$Res> get song;
 }
 
 /// @nodoc
-class __$$_AddSuccessCopyWithImpl<$Res> extends _$AddSongStateCopyWithImpl<$Res>
+class __$$_AddSuccessCopyWithImpl<$Res>
+    extends _$AddSongStateCopyWithImpl<$Res, _$_AddSuccess>
     implements _$$_AddSuccessCopyWith<$Res> {
   __$$_AddSuccessCopyWithImpl(
       _$_AddSuccess _value, $Res Function(_$_AddSuccess) _then)
-      : super(_value, (v) => _then(v as _$_AddSuccess));
+      : super(_value, _then);
 
-  @override
-  _$_AddSuccess get _value => super._value as _$_AddSuccess;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? song = freezed,
+    Object? song = null,
   }) {
     return _then(_$_AddSuccess(
-      song == freezed
+      null == song
           ? _value.song
           : song // ignore: cast_nullable_to_non_nullable
               as Song,
@@ -503,6 +501,7 @@ class __$$_AddSuccessCopyWithImpl<$Res> extends _$AddSongStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SongCopyWith<$Res> get song {
     return $SongCopyWith<$Res>(_value.song, (value) {
       return _then(_value.copyWith(song: value));
@@ -528,15 +527,15 @@ class _$_AddSuccess implements _AddSuccess {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AddSuccess &&
-            const DeepCollectionEquality().equals(other.song, song));
+            (identical(other.song, song) || other.song == song));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(song));
+  int get hashCode => Object.hash(runtimeType, song);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AddSuccessCopyWith<_$_AddSuccess> get copyWith =>
       __$$_AddSuccessCopyWithImpl<_$_AddSuccess>(this, _$identity);
 
@@ -554,10 +553,10 @@ class _$_AddSuccess implements _AddSuccess {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(PlaylistFailure failure)? addFailure,
-    TResult Function(Song song)? addSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(PlaylistFailure failure)? addFailure,
+    TResult? Function(Song song)? addSuccess,
   }) {
     return addSuccess?.call(song);
   }
@@ -591,10 +590,10 @@ class _$_AddSuccess implements _AddSuccess {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_AddFailure value)? addFailure,
-    TResult Function(_AddSuccess value)? addSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_AddFailure value)? addFailure,
+    TResult? Function(_AddSuccess value)? addSuccess,
   }) {
     return addSuccess?.call(this);
   }

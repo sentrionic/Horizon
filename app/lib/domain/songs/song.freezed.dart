@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'song.dart';
 
@@ -32,7 +32,8 @@ mixin _$Song {
 /// @nodoc
 abstract class $SongCopyWith<$Res> {
   factory $SongCopyWith(Song value, $Res Function(Song) then) =
-      _$SongCopyWithImpl<$Res>;
+      _$SongCopyWithImpl<$Res, Song>;
+  @useResult
   $Res call(
       {String id,
       String title,
@@ -47,64 +48,68 @@ abstract class $SongCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SongCopyWithImpl<$Res> implements $SongCopyWith<$Res> {
+class _$SongCopyWithImpl<$Res, $Val extends Song>
+    implements $SongCopyWith<$Res> {
   _$SongCopyWithImpl(this._value, this._then);
 
-  final Song _value;
   // ignore: unused_field
-  final $Res Function(Song) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? url = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? url = null,
     Object? plays = freezed,
-    Object? duration = freezed,
+    Object? duration = null,
     Object? dateAdded = freezed,
-    Object? isLiked = freezed,
-    Object? artist = freezed,
+    Object? isLiked = null,
+    Object? artist = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      plays: plays == freezed
+      plays: freezed == plays
           ? _value.plays
           : plays // ignore: cast_nullable_to_non_nullable
               as int?,
-      duration: duration == freezed
+      duration: null == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      dateAdded: dateAdded == freezed
+      dateAdded: freezed == dateAdded
           ? _value.dateAdded
           : dateAdded // ignore: cast_nullable_to_non_nullable
               as String?,
-      isLiked: isLiked == freezed
+      isLiked: null == isLiked
           ? _value.isLiked
           : isLiked // ignore: cast_nullable_to_non_nullable
               as bool,
-      artist: artist == freezed
+      artist: null == artist
           ? _value.artist
           : artist // ignore: cast_nullable_to_non_nullable
               as Artist,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ArtistCopyWith<$Res> get artist {
     return $ArtistCopyWith<$Res>(_value.artist, (value) {
-      return _then(_value.copyWith(artist: value));
+      return _then(_value.copyWith(artist: value) as $Val);
     });
   }
 }
@@ -114,6 +119,7 @@ abstract class _$$_SongCopyWith<$Res> implements $SongCopyWith<$Res> {
   factory _$$_SongCopyWith(_$_Song value, $Res Function(_$_Song) then) =
       __$$_SongCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String id,
       String title,
@@ -129,55 +135,53 @@ abstract class _$$_SongCopyWith<$Res> implements $SongCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_SongCopyWithImpl<$Res> extends _$SongCopyWithImpl<$Res>
+class __$$_SongCopyWithImpl<$Res> extends _$SongCopyWithImpl<$Res, _$_Song>
     implements _$$_SongCopyWith<$Res> {
   __$$_SongCopyWithImpl(_$_Song _value, $Res Function(_$_Song) _then)
-      : super(_value, (v) => _then(v as _$_Song));
+      : super(_value, _then);
 
-  @override
-  _$_Song get _value => super._value as _$_Song;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? url = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? url = null,
     Object? plays = freezed,
-    Object? duration = freezed,
+    Object? duration = null,
     Object? dateAdded = freezed,
-    Object? isLiked = freezed,
-    Object? artist = freezed,
+    Object? isLiked = null,
+    Object? artist = null,
   }) {
     return _then(_$_Song(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      plays: plays == freezed
+      plays: freezed == plays
           ? _value.plays
           : plays // ignore: cast_nullable_to_non_nullable
               as int?,
-      duration: duration == freezed
+      duration: null == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      dateAdded: dateAdded == freezed
+      dateAdded: freezed == dateAdded
           ? _value.dateAdded
           : dateAdded // ignore: cast_nullable_to_non_nullable
               as String?,
-      isLiked: isLiked == freezed
+      isLiked: null == isLiked
           ? _value.isLiked
           : isLiked // ignore: cast_nullable_to_non_nullable
               as bool,
-      artist: artist == freezed
+      artist: null == artist
           ? _value.artist
           : artist // ignore: cast_nullable_to_non_nullable
               as Artist,
@@ -226,30 +230,25 @@ class _$_Song extends _Song {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Song &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.url, url) &&
-            const DeepCollectionEquality().equals(other.plays, plays) &&
-            const DeepCollectionEquality().equals(other.duration, duration) &&
-            const DeepCollectionEquality().equals(other.dateAdded, dateAdded) &&
-            const DeepCollectionEquality().equals(other.isLiked, isLiked) &&
-            const DeepCollectionEquality().equals(other.artist, artist));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.plays, plays) || other.plays == plays) &&
+            (identical(other.duration, duration) ||
+                other.duration == duration) &&
+            (identical(other.dateAdded, dateAdded) ||
+                other.dateAdded == dateAdded) &&
+            (identical(other.isLiked, isLiked) || other.isLiked == isLiked) &&
+            (identical(other.artist, artist) || other.artist == artist));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(url),
-      const DeepCollectionEquality().hash(plays),
-      const DeepCollectionEquality().hash(duration),
-      const DeepCollectionEquality().hash(dateAdded),
-      const DeepCollectionEquality().hash(isLiked),
-      const DeepCollectionEquality().hash(artist));
+      runtimeType, id, title, url, plays, duration, dateAdded, isLiked, artist);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SongCopyWith<_$_Song> get copyWith =>
       __$$_SongCopyWithImpl<_$_Song>(this, _$identity);
 }

@@ -13,6 +13,7 @@ import 'package:horizon/presentation/main/layout/track_list/tracks_list.dart';
 import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/main/playlist/widgets/playlist_header.dart';
 
+@RoutePage()
 class PlaylistScreen extends StatelessWidget {
   final String id;
   const PlaylistScreen({

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'playlist.dart';
 
@@ -31,7 +31,8 @@ mixin _$Playlist {
 /// @nodoc
 abstract class $PlaylistCopyWith<$Res> {
   factory $PlaylistCopyWith(Playlist value, $Res Function(Playlist) then) =
-      _$PlaylistCopyWithImpl<$Res>;
+      _$PlaylistCopyWithImpl<$Res, Playlist>;
+  @useResult
   $Res call(
       {String id,
       String name,
@@ -42,48 +43,51 @@ abstract class $PlaylistCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PlaylistCopyWithImpl<$Res> implements $PlaylistCopyWith<$Res> {
+class _$PlaylistCopyWithImpl<$Res, $Val extends Playlist>
+    implements $PlaylistCopyWith<$Res> {
   _$PlaylistCopyWithImpl(this._value, this._then);
 
-  final Playlist _value;
   // ignore: unused_field
-  final $Res Function(Playlist) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? description = freezed,
-    Object? owner = freezed,
-    Object? duration = freezed,
-    Object? songCount = freezed,
+    Object? owner = null,
+    Object? duration = null,
+    Object? songCount = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      owner: owner == freezed
+      owner: null == owner
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
               as String,
-      duration: duration == freezed
+      duration: null == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      songCount: songCount == freezed
+      songCount: null == songCount
           ? _value.songCount
           : songCount // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -93,6 +97,7 @@ abstract class _$$_PlaylistCopyWith<$Res> implements $PlaylistCopyWith<$Res> {
           _$_Playlist value, $Res Function(_$_Playlist) then) =
       __$$_PlaylistCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String id,
       String name,
@@ -103,46 +108,45 @@ abstract class _$$_PlaylistCopyWith<$Res> implements $PlaylistCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_PlaylistCopyWithImpl<$Res> extends _$PlaylistCopyWithImpl<$Res>
+class __$$_PlaylistCopyWithImpl<$Res>
+    extends _$PlaylistCopyWithImpl<$Res, _$_Playlist>
     implements _$$_PlaylistCopyWith<$Res> {
   __$$_PlaylistCopyWithImpl(
       _$_Playlist _value, $Res Function(_$_Playlist) _then)
-      : super(_value, (v) => _then(v as _$_Playlist));
+      : super(_value, _then);
 
-  @override
-  _$_Playlist get _value => super._value as _$_Playlist;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? description = freezed,
-    Object? owner = freezed,
-    Object? duration = freezed,
-    Object? songCount = freezed,
+    Object? owner = null,
+    Object? duration = null,
+    Object? songCount = null,
   }) {
     return _then(_$_Playlist(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      owner: owner == freezed
+      owner: null == owner
           ? _value.owner
           : owner // ignore: cast_nullable_to_non_nullable
               as String,
-      duration: duration == freezed
+      duration: null == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as int,
-      songCount: songCount == freezed
+      songCount: null == songCount
           ? _value.songCount
           : songCount // ignore: cast_nullable_to_non_nullable
               as int,
@@ -185,27 +189,24 @@ class _$_Playlist extends _Playlist {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Playlist &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.owner, owner) &&
-            const DeepCollectionEquality().equals(other.duration, duration) &&
-            const DeepCollectionEquality().equals(other.songCount, songCount));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.owner, owner) || other.owner == owner) &&
+            (identical(other.duration, duration) ||
+                other.duration == duration) &&
+            (identical(other.songCount, songCount) ||
+                other.songCount == songCount));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(owner),
-      const DeepCollectionEquality().hash(duration),
-      const DeepCollectionEquality().hash(songCount));
+      runtimeType, id, name, description, owner, duration, songCount);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PlaylistCopyWith<_$_Playlist> get copyWith =>
       __$$_PlaylistCopyWithImpl<_$_Playlist>(this, _$identity);
 }

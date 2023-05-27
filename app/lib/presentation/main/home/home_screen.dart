@@ -17,6 +17,7 @@ import 'package:horizon/presentation/main/layout/track_list/tracks_list.dart';
 import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
+@RoutePage()
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -60,7 +61,7 @@ class _HomePage extends HookWidget {
         children: [
           Text(
             getTimeOfDay(),
-            style: Theme.of(context).textTheme.headline2?.copyWith(
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
                   fontSize: 28,
                   fontWeight: FontWeight.w800,
                 ),
@@ -71,7 +72,7 @@ class _HomePage extends HookWidget {
           CategoryHeader(
             category: "Top songs today",
             onClick: () => AutoRouter.of(context).push(
-              HomeSongsPageRoute(
+              HomeSongsRoute(
                 query: SongQuery.popular,
               ),
             ),
@@ -94,7 +95,7 @@ class _HomePage extends HookWidget {
           CategoryHeader(
             category: "Newly added",
             onClick: () => AutoRouter.of(context).push(
-              HomeSongsPageRoute(
+              HomeSongsRoute(
                 query: SongQuery.newlyAdded,
               ),
             ),

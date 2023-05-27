@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'toggle_like_cubit.dart';
 
@@ -26,10 +26,10 @@ mixin _$ToggleLikeState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(SongFailure failure)? toggleFailure,
-    TResult Function(Song song)? toggleSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(SongFailure failure)? toggleFailure,
+    TResult? Function(Song song)? toggleSuccess,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$ToggleLikeState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_ToggleFailure value)? toggleFailure,
-    TResult Function(_ToggleSuccess value)? toggleSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_ToggleFailure value)? toggleFailure,
+    TResult? Function(_ToggleSuccess value)? toggleSuccess,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,17 +72,18 @@ mixin _$ToggleLikeState {
 abstract class $ToggleLikeStateCopyWith<$Res> {
   factory $ToggleLikeStateCopyWith(
           ToggleLikeState value, $Res Function(ToggleLikeState) then) =
-      _$ToggleLikeStateCopyWithImpl<$Res>;
+      _$ToggleLikeStateCopyWithImpl<$Res, ToggleLikeState>;
 }
 
 /// @nodoc
-class _$ToggleLikeStateCopyWithImpl<$Res>
+class _$ToggleLikeStateCopyWithImpl<$Res, $Val extends ToggleLikeState>
     implements $ToggleLikeStateCopyWith<$Res> {
   _$ToggleLikeStateCopyWithImpl(this._value, this._then);
 
-  final ToggleLikeState _value;
   // ignore: unused_field
-  final $Res Function(ToggleLikeState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
@@ -93,13 +94,11 @@ abstract class _$$_InitialCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res> extends _$ToggleLikeStateCopyWithImpl<$Res>
+class __$$_InitialCopyWithImpl<$Res>
+    extends _$ToggleLikeStateCopyWithImpl<$Res, _$_Initial>
     implements _$$_InitialCopyWith<$Res> {
   __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
-      : super(_value, (v) => _then(v as _$_Initial));
-
-  @override
-  _$_Initial get _value => super._value as _$_Initial;
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -135,10 +134,10 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(SongFailure failure)? toggleFailure,
-    TResult Function(Song song)? toggleSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(SongFailure failure)? toggleFailure,
+    TResult? Function(Song song)? toggleSuccess,
   }) {
     return initial?.call();
   }
@@ -172,10 +171,10 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_ToggleFailure value)? toggleFailure,
-    TResult Function(_ToggleSuccess value)? toggleSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_ToggleFailure value)? toggleFailure,
+    TResult? Function(_ToggleSuccess value)? toggleSuccess,
   }) {
     return initial?.call(this);
   }
@@ -209,14 +208,11 @@ abstract class _$$_ActionInProgressCopyWith<$Res> {
 
 /// @nodoc
 class __$$_ActionInProgressCopyWithImpl<$Res>
-    extends _$ToggleLikeStateCopyWithImpl<$Res>
+    extends _$ToggleLikeStateCopyWithImpl<$Res, _$_ActionInProgress>
     implements _$$_ActionInProgressCopyWith<$Res> {
   __$$_ActionInProgressCopyWithImpl(
       _$_ActionInProgress _value, $Res Function(_$_ActionInProgress) _then)
-      : super(_value, (v) => _then(v as _$_ActionInProgress));
-
-  @override
-  _$_ActionInProgress get _value => super._value as _$_ActionInProgress;
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -252,10 +248,10 @@ class _$_ActionInProgress implements _ActionInProgress {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(SongFailure failure)? toggleFailure,
-    TResult Function(Song song)? toggleSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(SongFailure failure)? toggleFailure,
+    TResult? Function(Song song)? toggleSuccess,
   }) {
     return actionInProgress?.call();
   }
@@ -289,10 +285,10 @@ class _$_ActionInProgress implements _ActionInProgress {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_ToggleFailure value)? toggleFailure,
-    TResult Function(_ToggleSuccess value)? toggleSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_ToggleFailure value)? toggleFailure,
+    TResult? Function(_ToggleSuccess value)? toggleSuccess,
   }) {
     return actionInProgress?.call(this);
   }
@@ -322,6 +318,7 @@ abstract class _$$_ToggleFailureCopyWith<$Res> {
   factory _$$_ToggleFailureCopyWith(
           _$_ToggleFailure value, $Res Function(_$_ToggleFailure) then) =
       __$$_ToggleFailureCopyWithImpl<$Res>;
+  @useResult
   $Res call({SongFailure failure});
 
   $SongFailureCopyWith<$Res> get failure;
@@ -329,21 +326,19 @@ abstract class _$$_ToggleFailureCopyWith<$Res> {
 
 /// @nodoc
 class __$$_ToggleFailureCopyWithImpl<$Res>
-    extends _$ToggleLikeStateCopyWithImpl<$Res>
+    extends _$ToggleLikeStateCopyWithImpl<$Res, _$_ToggleFailure>
     implements _$$_ToggleFailureCopyWith<$Res> {
   __$$_ToggleFailureCopyWithImpl(
       _$_ToggleFailure _value, $Res Function(_$_ToggleFailure) _then)
-      : super(_value, (v) => _then(v as _$_ToggleFailure));
+      : super(_value, _then);
 
-  @override
-  _$_ToggleFailure get _value => super._value as _$_ToggleFailure;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? failure = freezed,
+    Object? failure = null,
   }) {
     return _then(_$_ToggleFailure(
-      failure == freezed
+      null == failure
           ? _value.failure
           : failure // ignore: cast_nullable_to_non_nullable
               as SongFailure,
@@ -351,6 +346,7 @@ class __$$_ToggleFailureCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SongFailureCopyWith<$Res> get failure {
     return $SongFailureCopyWith<$Res>(_value.failure, (value) {
       return _then(_value.copyWith(failure: value));
@@ -376,15 +372,15 @@ class _$_ToggleFailure implements _ToggleFailure {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ToggleFailure &&
-            const DeepCollectionEquality().equals(other.failure, failure));
+            (identical(other.failure, failure) || other.failure == failure));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(failure));
+  int get hashCode => Object.hash(runtimeType, failure);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ToggleFailureCopyWith<_$_ToggleFailure> get copyWith =>
       __$$_ToggleFailureCopyWithImpl<_$_ToggleFailure>(this, _$identity);
 
@@ -402,10 +398,10 @@ class _$_ToggleFailure implements _ToggleFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(SongFailure failure)? toggleFailure,
-    TResult Function(Song song)? toggleSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(SongFailure failure)? toggleFailure,
+    TResult? Function(Song song)? toggleSuccess,
   }) {
     return toggleFailure?.call(failure);
   }
@@ -439,10 +435,10 @@ class _$_ToggleFailure implements _ToggleFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_ToggleFailure value)? toggleFailure,
-    TResult Function(_ToggleSuccess value)? toggleSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_ToggleFailure value)? toggleFailure,
+    TResult? Function(_ToggleSuccess value)? toggleSuccess,
   }) {
     return toggleFailure?.call(this);
   }
@@ -477,6 +473,7 @@ abstract class _$$_ToggleSuccessCopyWith<$Res> {
   factory _$$_ToggleSuccessCopyWith(
           _$_ToggleSuccess value, $Res Function(_$_ToggleSuccess) then) =
       __$$_ToggleSuccessCopyWithImpl<$Res>;
+  @useResult
   $Res call({Song song});
 
   $SongCopyWith<$Res> get song;
@@ -484,21 +481,19 @@ abstract class _$$_ToggleSuccessCopyWith<$Res> {
 
 /// @nodoc
 class __$$_ToggleSuccessCopyWithImpl<$Res>
-    extends _$ToggleLikeStateCopyWithImpl<$Res>
+    extends _$ToggleLikeStateCopyWithImpl<$Res, _$_ToggleSuccess>
     implements _$$_ToggleSuccessCopyWith<$Res> {
   __$$_ToggleSuccessCopyWithImpl(
       _$_ToggleSuccess _value, $Res Function(_$_ToggleSuccess) _then)
-      : super(_value, (v) => _then(v as _$_ToggleSuccess));
+      : super(_value, _then);
 
-  @override
-  _$_ToggleSuccess get _value => super._value as _$_ToggleSuccess;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? song = freezed,
+    Object? song = null,
   }) {
     return _then(_$_ToggleSuccess(
-      song == freezed
+      null == song
           ? _value.song
           : song // ignore: cast_nullable_to_non_nullable
               as Song,
@@ -506,6 +501,7 @@ class __$$_ToggleSuccessCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SongCopyWith<$Res> get song {
     return $SongCopyWith<$Res>(_value.song, (value) {
       return _then(_value.copyWith(song: value));
@@ -531,15 +527,15 @@ class _$_ToggleSuccess implements _ToggleSuccess {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ToggleSuccess &&
-            const DeepCollectionEquality().equals(other.song, song));
+            (identical(other.song, song) || other.song == song));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(song));
+  int get hashCode => Object.hash(runtimeType, song);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ToggleSuccessCopyWith<_$_ToggleSuccess> get copyWith =>
       __$$_ToggleSuccessCopyWithImpl<_$_ToggleSuccess>(this, _$identity);
 
@@ -557,10 +553,10 @@ class _$_ToggleSuccess implements _ToggleSuccess {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? actionInProgress,
-    TResult Function(SongFailure failure)? toggleFailure,
-    TResult Function(Song song)? toggleSuccess,
+    TResult? Function()? initial,
+    TResult? Function()? actionInProgress,
+    TResult? Function(SongFailure failure)? toggleFailure,
+    TResult? Function(Song song)? toggleSuccess,
   }) {
     return toggleSuccess?.call(song);
   }
@@ -594,10 +590,10 @@ class _$_ToggleSuccess implements _ToggleSuccess {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_ActionInProgress value)? actionInProgress,
-    TResult Function(_ToggleFailure value)? toggleFailure,
-    TResult Function(_ToggleSuccess value)? toggleSuccess,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ActionInProgress value)? actionInProgress,
+    TResult? Function(_ToggleFailure value)? toggleFailure,
+    TResult? Function(_ToggleSuccess value)? toggleSuccess,
   }) {
     return toggleSuccess?.call(this);
   }

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'audio_player_cubit.dart';
 
@@ -30,7 +30,8 @@ mixin _$AudioPlayerState {
 abstract class $AudioPlayerStateCopyWith<$Res> {
   factory $AudioPlayerStateCopyWith(
           AudioPlayerState value, $Res Function(AudioPlayerState) then) =
-      _$AudioPlayerStateCopyWithImpl<$Res>;
+      _$AudioPlayerStateCopyWithImpl<$Res, AudioPlayerState>;
+  @useResult
   $Res call(
       {AudioPlayer player,
       String? currentlyPlayingID,
@@ -39,39 +40,41 @@ abstract class $AudioPlayerStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AudioPlayerStateCopyWithImpl<$Res>
+class _$AudioPlayerStateCopyWithImpl<$Res, $Val extends AudioPlayerState>
     implements $AudioPlayerStateCopyWith<$Res> {
   _$AudioPlayerStateCopyWithImpl(this._value, this._then);
 
-  final AudioPlayerState _value;
   // ignore: unused_field
-  final $Res Function(AudioPlayerState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? player = freezed,
+    Object? player = null,
     Object? currentlyPlayingID = freezed,
-    Object? volume = freezed,
-    Object? shuffleEnabled = freezed,
+    Object? volume = null,
+    Object? shuffleEnabled = null,
   }) {
     return _then(_value.copyWith(
-      player: player == freezed
+      player: null == player
           ? _value.player
           : player // ignore: cast_nullable_to_non_nullable
               as AudioPlayer,
-      currentlyPlayingID: currentlyPlayingID == freezed
+      currentlyPlayingID: freezed == currentlyPlayingID
           ? _value.currentlyPlayingID
           : currentlyPlayingID // ignore: cast_nullable_to_non_nullable
               as String?,
-      volume: volume == freezed
+      volume: null == volume
           ? _value.volume
           : volume // ignore: cast_nullable_to_non_nullable
               as double,
-      shuffleEnabled: shuffleEnabled == freezed
+      shuffleEnabled: null == shuffleEnabled
           ? _value.shuffleEnabled
           : shuffleEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
@@ -82,6 +85,7 @@ abstract class _$$_AudioPlayerStateCopyWith<$Res>
           _$_AudioPlayerState value, $Res Function(_$_AudioPlayerState) then) =
       __$$_AudioPlayerStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {AudioPlayer player,
       String? currentlyPlayingID,
@@ -91,36 +95,34 @@ abstract class _$$_AudioPlayerStateCopyWith<$Res>
 
 /// @nodoc
 class __$$_AudioPlayerStateCopyWithImpl<$Res>
-    extends _$AudioPlayerStateCopyWithImpl<$Res>
+    extends _$AudioPlayerStateCopyWithImpl<$Res, _$_AudioPlayerState>
     implements _$$_AudioPlayerStateCopyWith<$Res> {
   __$$_AudioPlayerStateCopyWithImpl(
       _$_AudioPlayerState _value, $Res Function(_$_AudioPlayerState) _then)
-      : super(_value, (v) => _then(v as _$_AudioPlayerState));
+      : super(_value, _then);
 
-  @override
-  _$_AudioPlayerState get _value => super._value as _$_AudioPlayerState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? player = freezed,
+    Object? player = null,
     Object? currentlyPlayingID = freezed,
-    Object? volume = freezed,
-    Object? shuffleEnabled = freezed,
+    Object? volume = null,
+    Object? shuffleEnabled = null,
   }) {
     return _then(_$_AudioPlayerState(
-      player: player == freezed
+      player: null == player
           ? _value.player
           : player // ignore: cast_nullable_to_non_nullable
               as AudioPlayer,
-      currentlyPlayingID: currentlyPlayingID == freezed
+      currentlyPlayingID: freezed == currentlyPlayingID
           ? _value.currentlyPlayingID
           : currentlyPlayingID // ignore: cast_nullable_to_non_nullable
               as String?,
-      volume: volume == freezed
+      volume: null == volume
           ? _value.volume
           : volume // ignore: cast_nullable_to_non_nullable
               as double,
-      shuffleEnabled: shuffleEnabled == freezed
+      shuffleEnabled: null == shuffleEnabled
           ? _value.shuffleEnabled
           : shuffleEnabled // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -156,24 +158,21 @@ class _$_AudioPlayerState implements _AudioPlayerState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AudioPlayerState &&
-            const DeepCollectionEquality().equals(other.player, player) &&
-            const DeepCollectionEquality()
-                .equals(other.currentlyPlayingID, currentlyPlayingID) &&
-            const DeepCollectionEquality().equals(other.volume, volume) &&
-            const DeepCollectionEquality()
-                .equals(other.shuffleEnabled, shuffleEnabled));
+            (identical(other.player, player) || other.player == player) &&
+            (identical(other.currentlyPlayingID, currentlyPlayingID) ||
+                other.currentlyPlayingID == currentlyPlayingID) &&
+            (identical(other.volume, volume) || other.volume == volume) &&
+            (identical(other.shuffleEnabled, shuffleEnabled) ||
+                other.shuffleEnabled == shuffleEnabled));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(player),
-      const DeepCollectionEquality().hash(currentlyPlayingID),
-      const DeepCollectionEquality().hash(volume),
-      const DeepCollectionEquality().hash(shuffleEnabled));
+      runtimeType, player, currentlyPlayingID, volume, shuffleEnabled);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AudioPlayerStateCopyWith<_$_AudioPlayerState> get copyWith =>
       __$$_AudioPlayerStateCopyWithImpl<_$_AudioPlayerState>(this, _$identity);
 }

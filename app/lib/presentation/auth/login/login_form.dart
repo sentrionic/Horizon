@@ -34,7 +34,7 @@ class LoginForm extends StatelessWidget {
               context
                   .read<AuthStatusBloc>()
                   .add(const AuthStatusEvent.authCheckRequested());
-              AutoRouter.of(context).replace(const MainScreenRoute());
+              AutoRouter.of(context).replace(const MainRoute());
             },
           ),
         );
@@ -145,8 +145,8 @@ class LoginForm extends StatelessWidget {
                   children: [
                     const Text("Don't have an account?"),
                     TextButton(
-                      onPressed: () => AutoRouter.of(context)
-                          .replace(const RegisterScreenRoute()),
+                      onPressed: () =>
+                          AutoRouter.of(context).replace(const RegisterRoute()),
                       child: const Text(
                         "SIGNUP",
                         style: TextStyle(

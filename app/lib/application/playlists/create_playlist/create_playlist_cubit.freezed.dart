@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'create_playlist_cubit.dart';
 
@@ -32,7 +32,8 @@ mixin _$CreatePlaylistState {
 abstract class $CreatePlaylistStateCopyWith<$Res> {
   factory $CreatePlaylistStateCopyWith(
           CreatePlaylistState value, $Res Function(CreatePlaylistState) then) =
-      _$CreatePlaylistStateCopyWithImpl<$Res>;
+      _$CreatePlaylistStateCopyWithImpl<$Res, CreatePlaylistState>;
+  @useResult
   $Res call(
       {PlaylistName name,
       PlaylistDescription description,
@@ -42,44 +43,46 @@ abstract class $CreatePlaylistStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CreatePlaylistStateCopyWithImpl<$Res>
+class _$CreatePlaylistStateCopyWithImpl<$Res, $Val extends CreatePlaylistState>
     implements $CreatePlaylistStateCopyWith<$Res> {
   _$CreatePlaylistStateCopyWithImpl(this._value, this._then);
 
-  final CreatePlaylistState _value;
   // ignore: unused_field
-  final $Res Function(CreatePlaylistState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? createFailureOrSuccessOption = freezed,
+    Object? name = null,
+    Object? description = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? createFailureOrSuccessOption = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as PlaylistName,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as PlaylistDescription,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      createFailureOrSuccessOption: createFailureOrSuccessOption == freezed
+      createFailureOrSuccessOption: null == createFailureOrSuccessOption
           ? _value.createFailureOrSuccessOption
           : createFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<PlaylistFailure, Playlist>>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -90,6 +93,7 @@ abstract class _$$_CreatePlaylistStateCopyWith<$Res>
           $Res Function(_$_CreatePlaylistState) then) =
       __$$_CreatePlaylistStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {PlaylistName name,
       PlaylistDescription description,
@@ -100,41 +104,39 @@ abstract class _$$_CreatePlaylistStateCopyWith<$Res>
 
 /// @nodoc
 class __$$_CreatePlaylistStateCopyWithImpl<$Res>
-    extends _$CreatePlaylistStateCopyWithImpl<$Res>
+    extends _$CreatePlaylistStateCopyWithImpl<$Res, _$_CreatePlaylistState>
     implements _$$_CreatePlaylistStateCopyWith<$Res> {
   __$$_CreatePlaylistStateCopyWithImpl(_$_CreatePlaylistState _value,
       $Res Function(_$_CreatePlaylistState) _then)
-      : super(_value, (v) => _then(v as _$_CreatePlaylistState));
+      : super(_value, _then);
 
-  @override
-  _$_CreatePlaylistState get _value => super._value as _$_CreatePlaylistState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? createFailureOrSuccessOption = freezed,
+    Object? name = null,
+    Object? description = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? createFailureOrSuccessOption = null,
   }) {
     return _then(_$_CreatePlaylistState(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as PlaylistName,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as PlaylistDescription,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      createFailureOrSuccessOption: createFailureOrSuccessOption == freezed
+      createFailureOrSuccessOption: null == createFailureOrSuccessOption
           ? _value.createFailureOrSuccessOption
           : createFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<PlaylistFailure, Playlist>>,
@@ -173,29 +175,26 @@ class _$_CreatePlaylistState implements _CreatePlaylistState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CreatePlaylistState &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality().equals(
-                other.createFailureOrSuccessOption,
-                createFailureOrSuccessOption));
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                other.isSubmitting == isSubmitting) &&
+            (identical(other.createFailureOrSuccessOption,
+                    createFailureOrSuccessOption) ||
+                other.createFailureOrSuccessOption ==
+                    createFailureOrSuccessOption));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(createFailureOrSuccessOption));
+  int get hashCode => Object.hash(runtimeType, name, description,
+      showErrorMessages, isSubmitting, createFailureOrSuccessOption);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CreatePlaylistStateCopyWith<_$_CreatePlaylistState> get copyWith =>
       __$$_CreatePlaylistStateCopyWithImpl<_$_CreatePlaylistState>(
           this, _$identity);

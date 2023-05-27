@@ -5,6 +5,7 @@ import 'package:horizon/application/playlists/playlist_list/playlist_list_cubit.
 import 'package:horizon/injection.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
+@RoutePage()
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -24,7 +25,7 @@ class _LoadingIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<PlaylistListCubit, PlaylistListState>(
       listener: (context, state) {
-        AutoRouter.of(context).replace(const HomeScreenRoute());
+        AutoRouter.of(context).replace(const HomeRoute());
       },
       child: const SizedBox(),
     );

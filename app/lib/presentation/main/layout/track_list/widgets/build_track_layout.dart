@@ -124,7 +124,7 @@ List<DataCell> buildCells({
     DataCell(
       GestureDetector(
         onTap: () => context.router.push(
-          ArtistScreenRoute(id: song.artist.id),
+          ArtistRoute(id: song.artist.id),
         ),
         child: Text(
           song.artist.username,

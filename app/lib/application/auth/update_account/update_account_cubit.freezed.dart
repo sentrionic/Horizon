@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'update_account_cubit.dart';
 
@@ -32,7 +32,8 @@ mixin _$UpdateAccountState {
 abstract class $UpdateAccountStateCopyWith<$Res> {
   factory $UpdateAccountStateCopyWith(
           UpdateAccountState value, $Res Function(UpdateAccountState) then) =
-      _$UpdateAccountStateCopyWithImpl<$Res>;
+      _$UpdateAccountStateCopyWithImpl<$Res, UpdateAccountState>;
+  @useResult
   $Res call(
       {Username username,
       EmailAddress emailAddress,
@@ -42,44 +43,46 @@ abstract class $UpdateAccountStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UpdateAccountStateCopyWithImpl<$Res>
+class _$UpdateAccountStateCopyWithImpl<$Res, $Val extends UpdateAccountState>
     implements $UpdateAccountStateCopyWith<$Res> {
   _$UpdateAccountStateCopyWithImpl(this._value, this._then);
 
-  final UpdateAccountState _value;
   // ignore: unused_field
-  final $Res Function(UpdateAccountState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? emailAddress = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSaving = freezed,
-    Object? saveFailureOrSuccessOption = freezed,
+    Object? username = null,
+    Object? emailAddress = null,
+    Object? showErrorMessages = null,
+    Object? isSaving = null,
+    Object? saveFailureOrSuccessOption = null,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as Username,
-      emailAddress: emailAddress == freezed
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSaving: isSaving == freezed
+      isSaving: null == isSaving
           ? _value.isSaving
           : isSaving // ignore: cast_nullable_to_non_nullable
               as bool,
-      saveFailureOrSuccessOption: saveFailureOrSuccessOption == freezed
+      saveFailureOrSuccessOption: null == saveFailureOrSuccessOption
           ? _value.saveFailureOrSuccessOption
           : saveFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Account>>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -90,6 +93,7 @@ abstract class _$$_UpdateAccountStateCopyWith<$Res>
           $Res Function(_$_UpdateAccountState) then) =
       __$$_UpdateAccountStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {Username username,
       EmailAddress emailAddress,
@@ -100,41 +104,39 @@ abstract class _$$_UpdateAccountStateCopyWith<$Res>
 
 /// @nodoc
 class __$$_UpdateAccountStateCopyWithImpl<$Res>
-    extends _$UpdateAccountStateCopyWithImpl<$Res>
+    extends _$UpdateAccountStateCopyWithImpl<$Res, _$_UpdateAccountState>
     implements _$$_UpdateAccountStateCopyWith<$Res> {
   __$$_UpdateAccountStateCopyWithImpl(
       _$_UpdateAccountState _value, $Res Function(_$_UpdateAccountState) _then)
-      : super(_value, (v) => _then(v as _$_UpdateAccountState));
+      : super(_value, _then);
 
-  @override
-  _$_UpdateAccountState get _value => super._value as _$_UpdateAccountState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? emailAddress = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSaving = freezed,
-    Object? saveFailureOrSuccessOption = freezed,
+    Object? username = null,
+    Object? emailAddress = null,
+    Object? showErrorMessages = null,
+    Object? isSaving = null,
+    Object? saveFailureOrSuccessOption = null,
   }) {
     return _then(_$_UpdateAccountState(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as Username,
-      emailAddress: emailAddress == freezed
+      emailAddress: null == emailAddress
           ? _value.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSaving: isSaving == freezed
+      isSaving: null == isSaving
           ? _value.isSaving
           : isSaving // ignore: cast_nullable_to_non_nullable
               as bool,
-      saveFailureOrSuccessOption: saveFailureOrSuccessOption == freezed
+      saveFailureOrSuccessOption: null == saveFailureOrSuccessOption
           ? _value.saveFailureOrSuccessOption
           : saveFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Account>>,
@@ -173,27 +175,27 @@ class _$_UpdateAccountState implements _UpdateAccountState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_UpdateAccountState &&
-            const DeepCollectionEquality().equals(other.username, username) &&
-            const DeepCollectionEquality()
-                .equals(other.emailAddress, emailAddress) &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality().equals(other.isSaving, isSaving) &&
-            const DeepCollectionEquality().equals(
-                other.saveFailureOrSuccessOption, saveFailureOrSuccessOption));
+            (identical(other.username, username) ||
+                other.username == username) &&
+            (identical(other.emailAddress, emailAddress) ||
+                other.emailAddress == emailAddress) &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.isSaving, isSaving) ||
+                other.isSaving == isSaving) &&
+            (identical(other.saveFailureOrSuccessOption,
+                    saveFailureOrSuccessOption) ||
+                other.saveFailureOrSuccessOption ==
+                    saveFailureOrSuccessOption));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(username),
-      const DeepCollectionEquality().hash(emailAddress),
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(isSaving),
-      const DeepCollectionEquality().hash(saveFailureOrSuccessOption));
+  int get hashCode => Object.hash(runtimeType, username, emailAddress,
+      showErrorMessages, isSaving, saveFailureOrSuccessOption);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_UpdateAccountStateCopyWith<_$_UpdateAccountState> get copyWith =>
       __$$_UpdateAccountStateCopyWithImpl<_$_UpdateAccountState>(
           this, _$identity);

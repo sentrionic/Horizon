@@ -5,41 +5,41 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.19.6 <3.0.0"
 
 dependencies:
-  another_flushbar: ^1.10.29
-  auto_route: ^4.2.1
-  collection: ^1.16.0
+  another_flushbar: ^1.12.30
+  auto_route: ^7.2.0
+  collection: ^1.17.0
   dartz: ^0.10.1
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.1
-  flutter_hooks: ^0.18.5+1
-  flutter_secure_storage: ^6.0.0
-  freezed_annotation: ^2.1.0
-  get_it: ^7.2.0
-  grpc: ^3.0.2
+  flutter_bloc: ^8.1.3
+  flutter_hooks: ^0.18.6
+  flutter_secure_storage: ^8.0.0
+  freezed_annotation: ^2.2.0
+  get_it: ^7.6.0
+  grpc: ^3.1.0
   hive: ^2.2.3
-  hydrated_bloc: ^8.1.0
-  injectable: ^1.5.3
-  intl: ^0.17.0
-  just_audio: ^0.9.29
-  just_audio_libwinmedia: ^0.0.4+1
-  path_provider: ^2.0.11
+  hydrated_bloc: ^9.1.1
+  injectable: ^2.1.1
+  intl: ^0.18.1
+  just_audio: ^0.9.33
+  just_audio_windows: ^0.2.0
+  path_provider: ^2.0.15
   protobuf: ^2.1.0
-  rxdart: ^0.27.5
-  window_manager: ^0.2.7
+  rxdart: ^0.27.7
+  window_manager: ^0.3.4
 
 dev_dependencies:
-  auto_route_generator: ^4.2.1
-  bloc_test: ^9.1.0
+  auto_route_generator: ^7.1.1
+  bloc_test: ^9.1.2
   build_runner: null
   flutter_test:
     sdk: flutter
-  freezed: ^2.1.0+1
-  injectable_generator: ^1.5.4
-  lint: ^1.10.0
+  freezed: ^2.3.4
+  injectable_generator: ^2.1.5
+  lint: ^2.0.20
   mocktail: ^0.3.0
 
 flutter:

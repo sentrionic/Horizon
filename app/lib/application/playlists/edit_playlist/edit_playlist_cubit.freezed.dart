@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'edit_playlist_cubit.dart';
 
@@ -32,7 +32,8 @@ mixin _$EditPlaylistState {
 abstract class $EditPlaylistStateCopyWith<$Res> {
   factory $EditPlaylistStateCopyWith(
           EditPlaylistState value, $Res Function(EditPlaylistState) then) =
-      _$EditPlaylistStateCopyWithImpl<$Res>;
+      _$EditPlaylistStateCopyWithImpl<$Res, EditPlaylistState>;
+  @useResult
   $Res call(
       {PlaylistName name,
       PlaylistDescription description,
@@ -42,44 +43,46 @@ abstract class $EditPlaylistStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$EditPlaylistStateCopyWithImpl<$Res>
+class _$EditPlaylistStateCopyWithImpl<$Res, $Val extends EditPlaylistState>
     implements $EditPlaylistStateCopyWith<$Res> {
   _$EditPlaylistStateCopyWithImpl(this._value, this._then);
 
-  final EditPlaylistState _value;
   // ignore: unused_field
-  final $Res Function(EditPlaylistState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? editFailureOrSuccessOption = freezed,
+    Object? name = null,
+    Object? description = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? editFailureOrSuccessOption = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as PlaylistName,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as PlaylistDescription,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      editFailureOrSuccessOption: editFailureOrSuccessOption == freezed
+      editFailureOrSuccessOption: null == editFailureOrSuccessOption
           ? _value.editFailureOrSuccessOption
           : editFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<PlaylistFailure, Playlist>>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -90,6 +93,7 @@ abstract class _$$_EditPlaylistStateCopyWith<$Res>
           $Res Function(_$_EditPlaylistState) then) =
       __$$_EditPlaylistStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {PlaylistName name,
       PlaylistDescription description,
@@ -100,41 +104,39 @@ abstract class _$$_EditPlaylistStateCopyWith<$Res>
 
 /// @nodoc
 class __$$_EditPlaylistStateCopyWithImpl<$Res>
-    extends _$EditPlaylistStateCopyWithImpl<$Res>
+    extends _$EditPlaylistStateCopyWithImpl<$Res, _$_EditPlaylistState>
     implements _$$_EditPlaylistStateCopyWith<$Res> {
   __$$_EditPlaylistStateCopyWithImpl(
       _$_EditPlaylistState _value, $Res Function(_$_EditPlaylistState) _then)
-      : super(_value, (v) => _then(v as _$_EditPlaylistState));
+      : super(_value, _then);
 
-  @override
-  _$_EditPlaylistState get _value => super._value as _$_EditPlaylistState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? editFailureOrSuccessOption = freezed,
+    Object? name = null,
+    Object? description = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? editFailureOrSuccessOption = null,
   }) {
     return _then(_$_EditPlaylistState(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as PlaylistName,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as PlaylistDescription,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      editFailureOrSuccessOption: editFailureOrSuccessOption == freezed
+      editFailureOrSuccessOption: null == editFailureOrSuccessOption
           ? _value.editFailureOrSuccessOption
           : editFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<PlaylistFailure, Playlist>>,
@@ -173,28 +175,26 @@ class _$_EditPlaylistState implements _EditPlaylistState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EditPlaylistState &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality().equals(
-                other.editFailureOrSuccessOption, editFailureOrSuccessOption));
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                other.isSubmitting == isSubmitting) &&
+            (identical(other.editFailureOrSuccessOption,
+                    editFailureOrSuccessOption) ||
+                other.editFailureOrSuccessOption ==
+                    editFailureOrSuccessOption));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(editFailureOrSuccessOption));
+  int get hashCode => Object.hash(runtimeType, name, description,
+      showErrorMessages, isSubmitting, editFailureOrSuccessOption);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EditPlaylistStateCopyWith<_$_EditPlaylistState> get copyWith =>
       __$$_EditPlaylistStateCopyWithImpl<_$_EditPlaylistState>(
           this, _$identity);

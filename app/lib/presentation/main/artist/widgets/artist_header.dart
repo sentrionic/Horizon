@@ -28,7 +28,7 @@ class ArtistHeader extends StatelessWidget {
                     artist.username,
                     style: Theme.of(context)
                         .textTheme
-                        .headline2
+                        .displayMedium
                         ?.copyWith(fontSize: 80),
                   ),
                   const SizedBox(height: 16.0),

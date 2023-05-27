@@ -35,7 +35,7 @@ class SideMenuIconTab extends StatelessWidget {
           title,
           style: Theme.of(context)
               .textTheme
-              .bodyText1
+              .bodyLarge
               ?.copyWith(color: isActive ? Colors.white : Colors.white70),
           overflow: TextOverflow.ellipsis,
         ),
@@ -53,7 +53,7 @@ class FavoriteSongsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isActive =
-        AutoRouter.of(context).current.name == LikedSongsScreenRoute.name;
+        AutoRouter.of(context).current.name == LikedSongsRoute.name;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: ListTile(
@@ -73,12 +73,12 @@ class FavoriteSongsTab extends StatelessWidget {
           "Liked Songs",
           style: Theme.of(context)
               .textTheme
-              .bodyText1
+              .bodyLarge
               ?.copyWith(color: isActive ? Colors.white : Colors.white70),
           overflow: TextOverflow.ellipsis,
         ),
         onTap: () {
-          AutoRouter.of(context).push(const LikedSongsScreenRoute());
+          AutoRouter.of(context).push(const LikedSongsRoute());
         },
       ),
     );

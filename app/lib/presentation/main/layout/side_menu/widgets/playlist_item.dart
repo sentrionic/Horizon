@@ -27,14 +27,14 @@ class PlaylistItem extends StatelessWidget {
         dense: true,
         title: Text(
           playlist.name,
-          style: Theme.of(context).textTheme.bodyText2?.copyWith(
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: isActive ? Colors.white : Colors.grey[300],
                 fontSize: 12,
               ),
           overflow: TextOverflow.ellipsis,
         ),
         onTap: () {
-          AutoRouter.of(context).push(PlaylistScreenRoute(id: playlist.id));
+          AutoRouter.of(context).push(PlaylistRoute(id: playlist.id));
         },
       ),
     );

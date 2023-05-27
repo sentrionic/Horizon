@@ -46,16 +46,14 @@ class _SideMenuContent extends StatelessWidget {
               SideMenuIconTab(
                 iconData: Icons.home,
                 title: 'Home',
-                onTap: () =>
-                    AutoRouter.of(context).push(const HomeScreenRoute()),
-                isActive: current == HomeScreenRoute.name,
+                onTap: () => AutoRouter.of(context).push(const HomeRoute()),
+                isActive: current == HomeRoute.name,
               ),
               SideMenuIconTab(
                 iconData: Icons.search,
                 title: 'Search',
-                onTap: () =>
-                    AutoRouter.of(context).push(const SearchScreenRoute()),
-                isActive: current == SearchScreenRoute.name,
+                onTap: () => AutoRouter.of(context).push(const SearchRoute()),
+                isActive: current == SearchRoute.name,
               ),
               const SizedBox(height: 12.0),
               AddPlaylistTab(

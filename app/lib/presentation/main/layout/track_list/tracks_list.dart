@@ -41,8 +41,10 @@ class TracksList extends HookWidget {
           child: CustomDataTable(
             showDivider: showHeader,
             headingRowHeight: showHeader ? null : 0,
-            headingTextStyle:
-                Theme.of(context).textTheme.overline!.copyWith(fontSize: 12.0),
+            headingTextStyle: Theme.of(context)
+                .textTheme
+                .labelSmall!
+                .copyWith(fontSize: 12.0),
             dataRowHeight: 54.0,
             showCheckboxColumn: false,
             columns: buildColumns(

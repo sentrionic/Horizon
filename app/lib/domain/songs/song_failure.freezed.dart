@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'song_failure.dart';
 
@@ -23,7 +23,7 @@ mixin _$SongFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? unexpected,
+    TResult? Function()? unexpected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -39,7 +39,7 @@ mixin _$SongFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Unexpected value)? unexpected,
+    TResult? Function(_Unexpected value)? unexpected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -54,16 +54,18 @@ mixin _$SongFailure {
 abstract class $SongFailureCopyWith<$Res> {
   factory $SongFailureCopyWith(
           SongFailure value, $Res Function(SongFailure) then) =
-      _$SongFailureCopyWithImpl<$Res>;
+      _$SongFailureCopyWithImpl<$Res, SongFailure>;
 }
 
 /// @nodoc
-class _$SongFailureCopyWithImpl<$Res> implements $SongFailureCopyWith<$Res> {
+class _$SongFailureCopyWithImpl<$Res, $Val extends SongFailure>
+    implements $SongFailureCopyWith<$Res> {
   _$SongFailureCopyWithImpl(this._value, this._then);
 
-  final SongFailure _value;
   // ignore: unused_field
-  final $Res Function(SongFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
@@ -74,14 +76,12 @@ abstract class _$$_UnexpectedCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_UnexpectedCopyWithImpl<$Res> extends _$SongFailureCopyWithImpl<$Res>
+class __$$_UnexpectedCopyWithImpl<$Res>
+    extends _$SongFailureCopyWithImpl<$Res, _$_Unexpected>
     implements _$$_UnexpectedCopyWith<$Res> {
   __$$_UnexpectedCopyWithImpl(
       _$_Unexpected _value, $Res Function(_$_Unexpected) _then)
-      : super(_value, (v) => _then(v as _$_Unexpected));
-
-  @override
-  _$_Unexpected get _value => super._value as _$_Unexpected;
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -114,7 +114,7 @@ class _$_Unexpected implements _Unexpected {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? unexpected,
+    TResult? Function()? unexpected,
   }) {
     return unexpected?.call();
   }
@@ -142,7 +142,7 @@ class _$_Unexpected implements _Unexpected {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Unexpected value)? unexpected,
+    TResult? Function(_Unexpected value)? unexpected,
   }) {
     return unexpected?.call(this);
   }

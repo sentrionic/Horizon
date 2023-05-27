@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -13,6 +14,7 @@ import 'package:horizon/presentation/main/layout/app_layout.dart';
 import 'package:horizon/presentation/main/layout/track_list/tracks_list.dart';
 import 'package:horizon/presentation/main/layout/window_wrapper.dart';
 
+@RoutePage()
 class ArtistScreen extends StatelessWidget {
   final String id;
   const ArtistScreen({super.key, required this.id});

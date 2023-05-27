@@ -43,7 +43,7 @@ class SeekBar extends HookWidget {
               left: 0,
               child: Text(
                 getDurationString(position.inSeconds),
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
             Positioned.fill(
@@ -68,7 +68,7 @@ class SeekBar extends HookWidget {
               right: 0,
               child: Text(
                 getDurationString(duration.inSeconds),
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
           ],

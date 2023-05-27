@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:horizon/presentation/auth/widgets/auth_wrapper.dart';
 import 'package:horizon/presentation/routes/router.gr.dart';
 
+@RoutePage()
 class StartUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,8 +45,8 @@ class StartUpScreen extends StatelessWidget {
                       backgroundColor: Theme.of(context).colorScheme.secondary,
                       shape: const StadiumBorder(),
                     ),
-                    onPressed: () => AutoRouter.of(context)
-                        .replace(const LoginScreenRoute()),
+                    onPressed: () =>
+                        AutoRouter.of(context).replace(const LoginRoute()),
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: const Text(
@@ -68,8 +69,8 @@ class StartUpScreen extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 3,
                   child: TextButton(
-                    onPressed: () => AutoRouter.of(context)
-                        .replace(const RegisterScreenRoute()),
+                    onPressed: () =>
+                        AutoRouter.of(context).replace(const RegisterRoute()),
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: const Text(
